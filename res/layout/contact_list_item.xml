@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/photo_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_contact"
+            android:padding="10.0dip" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/photo_view"
+            android:layout_marginLeft="2.0dp"
+            android:layout_marginRight="5.0dp"
+            android:layout_toRightOf="@id/photo_view"
+            android:singleLine="true"
+            android:text="张三"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/name"
+            android:layout_marginTop="2dp"
+            android:ellipsize="marquee"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:text="13888888888"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#623215" />
+
+        <CheckBox
+            android:id="@+id/people_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD527"
+        android:paddingLeft="13dip"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#99CCFF"
+        android:visibility="gone" />
+
+</LinearLayout>

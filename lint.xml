@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DuplicateIds">
+        <ignore path="res/layout/information_dialog.xml" />
+    </issue>
+    <issue id="ShowToast">
+        <ignore path="src/activity/DoudizhuRoomListActivity.java" />
+    </issue>
+</lint>

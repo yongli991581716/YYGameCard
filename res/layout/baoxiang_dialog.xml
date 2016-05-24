@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mm_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <LinearLayout
+                android:id="@+id/showmsg_layout"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/photo_bg" >
+
+                <TextView
+                    android:id="@+id/common_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="每满5局开启神秘宝箱，最高可爆出50元话费与100张抽奖券！ 您现在还差 + (5 - quang) + 局才能开启宝 + \n+ 箱，打的越多，爆的越多！"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="-50dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/common_cancel"
+                    style="@style/dialog_cancle_btn_style"
+                    android:text="@string/dialog_cancell2"
+                   	android:layout_marginRight="60dp"
+                     />
+
+                <Button
+                    android:id="@+id/common_ok"
+                    style="@style/dialog_ok_btn_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/common_cancel"
+                    android:text="@string/dialog_ok2" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

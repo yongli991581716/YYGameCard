@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/mainview"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/goodsview"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerInParent="true" />
+        <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/girl_circle"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

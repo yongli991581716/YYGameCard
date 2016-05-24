@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".IqGradeDialog" >
+    
+    <LinearLayout 
+        android:id="@+id/assistant_item_show"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_weight="10">
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+         android:layout_weight="1.2">
+       <ImageView 
+        android:id="@+id/img_read"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:background="@drawable/no_read"
+        />
+       </LinearLayout>
+        <TextView 
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="美女图鉴: 苍井空老湿"
+        android:textColor="@color/white"
+        android:layout_weight="3"/>
+        <TextView 
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:text="有效期   2013904"/>
+           </LinearLayout>
+           
+   <LinearLayout 
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:layout_weight="3">           
+    <Button 
+        android:id="@+id/cancel_btn"
+        android:layout_width="70dp"
+        android:layout_height="28dp"
+        android:textSize="15dp"
+        android:background="@drawable/green_btn_bg"
+        android:text="删除"
+        android:textColor="@color/white"
+        />
+    </LinearLayout>
+    
+ 
+</LinearLayout>

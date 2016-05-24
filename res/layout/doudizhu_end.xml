@@ -1,0 +1,541 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dzed_top_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88000000" >
+
+    <RelativeLayout
+        android:layout_width="418dp"
+        android:layout_height="290dp"
+        android:layout_centerInParent="true"
+        android:background="@null" >
+
+        <RelativeLayout
+            android:id="@+id/dzed_content_rl"
+            android:layout_width="415dp"
+            android:layout_height="270dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/game_end_dialog_bg" >
+
+            <RelativeLayout
+                android:id="@+id/dzed_c_rl_bottom_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/slip_tv"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/dzed_back"
+                    style="@style/dialog_ok_btn_style"
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@+id/slip_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/game_end_dialog_btn_bg"
+                    android:text="@string/back_btn"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dzed_again"
+                    style="@style/dialog_ok_btn_style"
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:layout_alignLeft="@+id/slip_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/game_end_dialog_btn_bg"
+                    android:text="@string/again_btn"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/dzed_c_rl_center_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="175dp"
+                android:layout_above="@+id/dzed_c_rl_bottom_ll"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="18dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="105dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/game_end_dialog_left"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="113dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/beishu_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:cacheColorHint="#00000000"
+                            android:divider="#00000000"
+                            android:fadingEdge="none"
+                            android:listSelector="#00000000"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/shuyin_height3"
+                                android:layout_marginTop="@dimen/shuying_magin_top2"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    style="@style/game_end_text2"
+                                    android:text="总倍数"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/dzed_zongbeishu"
+                                    style="@style/game_end_text2"
+                                    android:gravity="left|center_vertical"
+                                    android:text="X100"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/shuyin_height3"
+                                android:layout_marginTop="@dimen/shuying_magin_top2"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent" >
+
+                                    <TextView
+                                        style="@style/game_end_text2"
+                                        android:text="底    数"
+                                        android:textColor="@color/white" />
+
+                                    <TextView
+                                        android:id="@+id/dzed_dishu"
+                                        style="@style/game_end_text2"
+                                        android:gravity="left|center_vertical"
+                                        android:text="8"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6.5dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:background="@drawable/iq_grade_dialog_top_bar"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="@dimen/shuying_height"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+
+                            <TextView
+                                style="@style/game_end_text1"
+                                android:text="昵称" />
+
+                            <TextView
+                                style="@style/game_end_text1"
+                                android:text="金豆" />
+
+                            <TextView
+                                style="@style/game_end_text1"
+                                android:layout_weight="0"
+                                android:text="钻石"
+                                android:visibility="gone" />
+
+                            <TextView
+                                style="@style/game_end_text1"
+                                android:text="经验" 
+                                 android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/shuying_height"
+                        android:layout_marginLeft="3dp"
+                        android:background="@null" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/shuying_height1"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/dzed_head_1"
+                                android:layout_width="@dimen/shuying_height1"
+                                android:layout_height="@dimen/shuying_height1"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/game_end_dialog_icon_bg2"
+                                android:src="@drawable/nongmin" />
+
+                            <FrameLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@null" >
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent" >
+
+                                    <TextView
+                                        android:id="@+id/dzed_nickname_1"
+                                        style="@style/game_end_text2"
+                                        android:text="小布什"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/dzed_zhidou_1"
+                                        style="@style/game_end_text2"
+                                        android:text="1250W"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="0"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone" >
+
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:background="@drawable/room_item_brilliant_ico" />
+
+                                        <TextView
+                                            android:id="@+id/dzed_zhizuang_1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@color/black"
+                                            android:textSize="11sp" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/dzed_zhili_1"
+                                        style="@style/game_end_text2"
+                                        android:text="98"
+                                         android:visibility="gone"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/dzed_img_freeze"
+                                    android:layout_width="38dp"
+                                    android:layout_height="26dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="40dp"
+                                    android:background="@drawable/img_freeze"
+                                     android:visibility="gone"
+                                    android:contentDescription="@string/image_description" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/shuying_height1"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/iq_grade_dialog_slip_bar" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/shuying_height"
+                        android:layout_marginLeft="3dp"
+                        android:background="@null" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/shuying_height1"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/dzed_head_2"
+                                android:layout_width="@dimen/shuying_height1"
+                                android:layout_height="@dimen/shuying_height1"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/game_end_dialog_icon_bg1"
+                                android:src="@drawable/nongmin_girl" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent" >
+
+                                <TextView
+                                    android:id="@+id/dzed_nickname_2"
+                                    style="@style/game_end_text2"
+                                    android:text="林肯"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/dzed_zhidou_2"
+                                    style="@style/game_end_text2"
+                                    android:text="1250W"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="0"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone" >
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:background="@drawable/room_item_brilliant_ico" />
+
+                                    <TextView
+                                        android:id="@+id/dzed_zhizuang_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/black"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/dzed_zhili_2"
+                                    style="@style/game_end_text2"
+                                    android:text="98"
+                                     android:visibility="gone"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="280dp"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/shuying_height1"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/iq_grade_dialog_slip_bar" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/shuying_height"
+                        android:layout_marginLeft="3dp"
+                        android:background="@null" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/shuying_height1"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/dzed_head_3"
+                                android:layout_width="@dimen/shuying_height1"
+                                android:layout_height="@dimen/shuying_height1"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/game_end_dialog_icon_bg1"
+                                android:src="@drawable/dizhu" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent" >
+
+                                <TextView
+                                    android:id="@+id/dzed_nickname_3"
+                                    style="@style/game_end_text2"
+                                    android:text="华盛顿"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/dzed_zhidou_3"
+                                    style="@style/game_end_text2"
+                                    android:text="1250W"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="0"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone" >
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:background="@drawable/room_item_brilliant_ico" />
+
+                                    <TextView
+                                        android:id="@+id/dzed_zhizuang_3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/black"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/dzed_zhili_3"
+                                    style="@style/game_end_text2"
+                                    android:text="98"
+                                     android:visibility="gone"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="9dp"
+                        android:background="@drawable/iq_grade_dialog_top_bar"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent" >
+
+                            <TextView
+                                style="@style/game_end_text2"
+                                android:text="当前金豆 "
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dzed_now_zhidou"
+                                style="@style/game_end_text2"
+                                android:gravity="center_vertical"
+                                android:text="23368w"
+                                android:textColor="@color/darkred2"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/game_end_text2"
+                                android:text="  钻石 "
+                                android:visibility="invisible"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dzed_now_zhizuang"
+                                style="@style/game_end_text2"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                  android:visibility="invisible"
+                                android:textColor="@color/darkred2"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                style="@style/game_end_text2"
+                                android:layout_marginLeft="@dimen/shuying_magin_top"
+                                android:text="  等级 "
+                                 android:visibility="invisible"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dzed_now_zhishang"
+                                style="@style/game_end_text2"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                  android:visibility="invisible"
+                                android:textColor="@color/darkred2"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/dzed_recharge_btn"
+                            style="@style/dialog_ok_btn_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginLeft="15dp"
+                            android:text="充值"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:textSize="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dzed_lose_win_top_iv"
+            android:layout_width="320dp"
+            android:layout_height="49dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/iq_grade_dialog_win_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/dzed_lose_win_head_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/game_end_dialog_man_lose" />
+
+            <ImageView
+                android:id="@+id/dzed_lose_win"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/game_end_dialog_win_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

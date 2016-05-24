@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/ranking_list_item_width"
+    android:layout_height="fill_parent"
+    android:background="#FEF5B2" >
+
+    <Button
+        android:id="@+id/ranking_left_btn"
+        android:layout_width="@dimen/ranking_left_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="@dimen/ranking_item_marginTop"
+
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/ranking_prizes_item_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ranking_prizes_item_nick_marginLeft"
+        android:layout_marginTop="@dimen/ranking_item_marginTop"
+        android:padding="5dp"
+        android:text="asdfa"
+        android:textColor="#322610"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ranking_prizes_item_bean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ranking_prizes_item_bean_marginLeft"
+        android:layout_marginTop="@dimen/ranking_item_marginTop"
+        android:padding="5dp"
+        android:text="1234567"
+        android:textColor="#322610"
+        android:textSize="15sp" />
+
+</RelativeLayout>

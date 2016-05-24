@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mm_layout"
+    android:layout_width="450dp"
+    android:layout_height="300dp" xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/mm_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center"
+        tools:ignore="DuplicateIds" >
+
+        <RelativeLayout
+            android:id="@+id/account_binding_relayout"
+            android:layout_width="440dp"
+            android:layout_height="290dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="旧  密  码  ："
+                        android:textColor="@color/brown"/>
+                   <EditText
+                        android:id="@+id/old_password"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/textview_bg"
+                        android:digits="@string/rule_password"
+                        android:hint="@string/password_hint"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="新  密  码  ："
+                        android:textColor="@color/brown" />
+					<EditText
+                        android:id="@+id/new_password"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/textview_bg"
+                        android:digits="@string/rule_password"
+                        android:hint="@string/password_hint"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="确认密码 ： "
+                        android:textColor="@color/brown" />
+                   <EditText
+                        android:id="@+id/queren_password"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/textview_bg"
+                        android:digits="@string/rule_password"
+                        android:hint="@string/password_hint"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLength="30"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/common_ok"
+                    style="@style/dialog_ok_btn_style"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/dialog_ok" />
+
+                <Button
+                    android:id="@+id/common_cancel"
+                    style="@style/dialog_ok_btn_style"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/dialog_cancell" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/dialog_title_layout"/>
+</RelativeLayout>

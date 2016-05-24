@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ranking_page_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/home_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- android:background="@drawable/ranking_bg" > -->
+
+        <ImageView
+            android:id="@+id/total_ranking"
+            style="@style/setting_tip_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/total_ranking_marginLeft"
+            android:layout_marginTop="@dimen/total_ranking_marginTop" />
+
+        <ImageView
+            android:id="@+id/friend_ranking"
+            style="@style/setting_tip_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/friend_ranking_marginLeft"
+            android:layout_marginTop="@dimen/friend_ranking_marginTop" />
+
+        <RelativeLayout
+            android:id="@+id/left_text_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/left_text_explain_marginLeft"
+            android:layout_marginTop="@dimen/left_text_explain_marginTop"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/text_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_ranking_marginLeft"
+                android:text="@string/ranking"
+                android:textColor="#FFF402" />
+
+            <TextView
+                android:id="@+id/text_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_nick_marginLeft"
+                android:text="@string/text_nick"
+                android:textColor="#FFF402" />
+
+            <TextView
+                android:id="@+id/text_bean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_bean_marginLeft"
+                android:text="@string/text_bean"
+                android:textColor="#FFF402" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_text_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/right_text_explain_marginLeft"
+            android:layout_marginTop="@dimen/right_text_explain_marginTop"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/my_bean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_ranking_marginLeft"
+                android:text="@string/my_bean"
+                android:textColor="#F40201"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/my_bean_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_bean_count_marginLeft"
+                android:text="0"
+                android:textColor="#F40201"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bean_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bean_ranking_marginLeft"
+                android:text="@string/ranking"
+                android:textColor="#F40201"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bean_ranking_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bean_ranking_count_marginLeft"
+                android:text="0"
+                android:textColor="#F40201"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/ranking_list"
+            android:layout_width="@dimen/ranking_list_width"
+            android:layout_height="@dimen/ranking_list_height"
+            android:layout_marginLeft="@dimen/ranking_list_marginLeft"
+            android:layout_marginTop="@dimen/ranking_list_marginTop"
+            android:divider="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+    <!-- 底部三个按钮 -->
+
+</RelativeLayout>

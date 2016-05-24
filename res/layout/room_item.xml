@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/room_item_bg"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        style="@style/room_item_wh"/>
+   <TextView
+        android:id="@+id/room_item_personCount"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="25dp"
+        android:textSize="12dp"
+        android:textColor="#FFF4BA09"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text=""
+       /> 
+</RelativeLayout>

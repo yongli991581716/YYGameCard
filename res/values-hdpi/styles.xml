@@ -1,0 +1,355 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- activity不变暗 -->
+        <item name="android:backgroundDimAmount">0.9</item>
+    </style>
+
+    <style name="lotdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- activity不变暗 -->
+        <item name="android:backgroundDimAmount">0.9</item>
+    </style>
+
+    <style name="process_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    
+    <style name="process_dialog_black" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="gameCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">12dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:button">@drawable/game_check_box</item>
+    </style>
+
+    <style name="gamebaglayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- <item name="android:layout_marginLeft">120dp</item> -->
+    </style>
+
+    <style name="stove_tip_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="topLeftLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="topRightLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bottomLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="end_result_Layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="end_bean_pic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cdd_end_Layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="end_layout_bgwh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="task_tip_btn">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="setting_tip_btn">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="room_item_wh">
+        <item name="android:layout_width">222dp</item>
+        <item name="android:layout_height">65dp</item>
+    </style>
+
+    <style name="wait_image_wh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wait_bg_tishi">
+        <item name="android:layout_width">528dp</item>
+        <item name="android:layout_height">94dp</item>
+    </style>
+
+    <style name="login_wh">
+        <item name="android:layout_width">212dp</item>
+        <item name="android:layout_height">250dp</item>
+    </style>
+
+    <style name="login_wh2">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">240dp</item>
+    </style>
+
+    <style name="login_dialog_wh">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">210dp</item>
+    </style>
+
+    <style name="find_password_dialog_wh">
+        <item name="android:layout_width">295dp</item>
+        <item name="android:layout_height">225dp</item>
+    </style>
+
+    <style name="login_dialog_edt_wh">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="login_dialog_btn_wh">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="game_login_rl_margin">
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="game_login_img_wh">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="game_login_btn_wh">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">39dp</item>
+    </style>
+
+    <style name="room_type_wh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ddz_pic_wh">
+        <item name="android:layout_width">@dimen/head_width</item>
+        <item name="android:layout_height">@dimen/head_width</item>
+    </style>
+
+    <style name="head_pic_wh">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="iq_tv_wh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cdd_selfpic_wh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cdd_otherpic_wh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="zj_layout_bgwh">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">77dp</item>
+    </style>
+
+    <style name="jp_layout_bgwh">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="result_layout_bgwh">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="end_result_bgwh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tsdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 隐藏标题栏 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- activity不变暗 -->
+
+    </style>
+
+    <!-- 每日签到 -->
+    <style name="sign_dialog">
+        <item name="android:layout_height">300dp</item>
+        <item name="android:layout_width">600dp</item>
+    </style>
+
+    <style name="sign_dialog_title">
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_width">160dp</item>
+    </style>
+
+    <style name="sign_dialog_ll">
+        <item name="android:layout_width">450dp</item>
+        <item name="android:layout_height">235dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+    <!-- 每日签到GalleryItem -->
+    <style name="sign_gallery_item_ll">
+        <item name="android:layout_width">105dp</item>
+        <item name="android:layout_height">145dp</item>
+    </style>
+
+    <style name="sign_gallery_item_img2">
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">58dp</item>
+    </style>
+    <!-- 房间列表 -->
+    <style name="sign_gallery_item_img5">
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">58dp</item>
+    </style>
+
+    <style name="main_menu_bar_btn_wh1">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="main_menu_bar_btn_wh2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="menu_lottery_btn_wh">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="bag_view_margin">
+        <item name="android:layout_marginRight">70dp</item>
+        <item name="android:layout_marginBottom">45dp</item>
+    </style>
+    <!-- 游戏界面 -->
+    <style name="main_game_puker_num_wh">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">28dp</item>
+    </style>
+
+    <style name="main_game_player_type_wh">
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">28dp</item>
+    </style>
+
+    <style name="main_game_puker_num_img_wh">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">15dp</item>
+    </style>
+
+    <style name="main_game_head_wh1">
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="main_game_jiaofen_btn_wh">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">33dp</item>
+    </style>
+
+    <style name="main_game_clock_wh">
+        <item name="android:layout_width">39dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <!-- 游戏界面 -->
+    <!-- 游戏结束对话框 -->
+    <style name="game_end_text1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="game_end_text2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="game_end_text3">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <!-- 游戏结束对话框 -->
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="mystyle2" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/tuoguan_scale_action_in</item>
+        <item name="@android:windowExitAnimation">@anim/tuoguan_scale_action_out</item>
+    </style>
+	<!-- 预充值对话框 -->
+	<style name="pre_recharge_dialog_anim_style" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/pre_recharge_freeze_dialog_anim_in</item>
+        <item name="@android:windowExitAnimation">@anim/pre_recharge_freeze_dialog_anim_out</item>
+	</style>
+	
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shape_login"
+     >
+
+    <RelativeLayout
+        android:id="@+id/game_bg"
+        android:layout_width="462dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true" >
+
+        <!-- android:background="@drawable/game_green_new_bg" > -->
+
+        <RelativeLayout
+            android:id="@+id/katong"
+            style="@style/login_wh"
+            android:layout_height="212dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/katong" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_bg"
+            style="@style/login_wh2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/game_login_in_margin_left"
+            android:layout_toRightOf="@+id/katong">
+
+            <RelativeLayout
+                android:id="@+id/game_login_rl"
+                style="@style/game_login_rl_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp" >
+
+                <com.ant.liao.CircleImageView
+                    android:id="@+id/game_login_img"
+                    style="@style/game_login_img_wh"
+                    android:src="@drawable/nan_user_photo" />
+
+                <LinearLayout
+                    android:id="@+id/game_login_id_ll"
+                    android:layout_width="110dp"
+                    android:layout_height="22dp"
+                    android:layout_alignTop="@+id/game_login_img"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/game_login_img"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="昵称 :"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size14" />
+
+                    <TextView
+                        android:id="@+id/game_login_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/game_login_gold_ll"
+                    android:layout_width="110dp"
+                    android:layout_height="22dp"
+                    android:layout_alignBottom="@+id/game_login_img"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/game_login_img"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="金豆:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size14" />
+
+                    <TextView
+                        android:id="@+id/game_login_gold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="10"
+                        android:text=""
+                        android:textColor="@color/gold"
+                        android:textSize="@dimen/text_size14" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/do_task"
+                style="@style/blue_button"
+                android:layout_below="@+id/game_login_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="赚金豆,斗地主" />
+
+            <Button
+                android:id="@+id/game_login"
+                style="@style/game_login_btn_wh"
+                android:layout_below="@+id/game_login_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/game_quick_match"
+                 style="@style/blue_button"
+                android:layout_below="@+id/do_task"
+                android:layout_centerHorizontal="true"
+                android:text="快速游戏"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/game_login_bind_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:text="账号绑定 >>"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/gonggao"
+        style="@style/orange_button"
+        android:layout_width="80dp"
+        android:layout_margin="10dp"
+        android:text="新手任务" />
+
+    <!-- 公告栏 -->
+
+    <RelativeLayout
+        android:id="@+id/gg_detail"
+        style="@style/login_wh"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="42dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/announceet_xiao"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/room_list_scrollView"
+            android:layout_width="160dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="30dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/gg_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="#8C5709"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/gg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#8C5709"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/gg_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#8C5709"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/gg_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#8C5709"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/gg_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#8C5709"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+    </ViewFlipper>
+
+</RelativeLayout>

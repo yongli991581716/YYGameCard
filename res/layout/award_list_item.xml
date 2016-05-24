@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:weightSum="6" >
+
+    <TextView
+        android:id="@+id/ali_no_tv"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:text="105000000000000"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ali_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:text="山本一寸服饰凉茶"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ali_integral_tv"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:text="105"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ali_prize_tv"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:text="105"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

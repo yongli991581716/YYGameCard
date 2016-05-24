@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exchange_dialog_layout"
+    android:layout_width="450dp"
+    android:layout_height="300dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/recharge_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dialog_bg" >
+
+        <RelativeLayout
+            android:id="@+id/account_binding_relayout"
+            android:layout_width="440dp"
+            android:layout_height="290dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp" >
+
+            <TextView
+                android:id="@+id/hf_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="13dp"
+                android:text="@string/account_bind_text"
+                android:textColor="@color/brown" />
+
+            <LinearLayout
+                android:id="@+id/hf_phone_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hf_text_layout"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运营商：    "
+                    android:textColor="@color/brown" />
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/select_text"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textview_bg"
+                        android:editable="false"
+                        android:paddingLeft="5dp" />
+
+                    <Button
+                        android:id="@+id/spindown_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/drop_down_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phoneid_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hf_phone_layout"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号：    "
+                    android:textColor="@color/brown" />
+
+                <EditText
+                    android:id="@+id/phoneid"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_bg"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneid_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/stovebean_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_red"
+                    android:layout_alignParentLeft="true"
+                    android:text="合成金豆"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/recharge_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/btn_red"
+                    android:layout_alignParentRight="true"
+                    android:text="话费充值"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/dialog_title_layout" />
+
+</RelativeLayout>

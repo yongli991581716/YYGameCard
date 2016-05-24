@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mm_layout"
+    android:layout_width="400dp"
+    android:layout_height="260dp"
+    android:background="@drawable/photo_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/baoming_tip_img"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bag_wire" />
+
+    <RelativeLayout
+        android:id="@+id/sign_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/goods_sign_height" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_cancel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sign_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合成剂专场,玩家可报名参加该专场比赛，每场赢家奖合成剂（平民赢奖一瓶，地主赢奖2瓶）。"
+                android:textColor="@color/yellow" 
+                android:textSize="15dp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名费： "
+                    android:textColor="@color/yellow"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/sign_fee_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000金豆"
+                    android:textColor="@color/yellow" 
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="底    注： "
+                    android:textColor="@color/yellow" 
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/sign_base_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000金豆"
+                    android:textColor="@color/yellow"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sign_times_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="倍    数： "
+                    android:textColor="@color/yellow"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10倍"
+                    android:textColor="@color/yellow" 
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="准    入： "
+                    android:textColor="@color/yellow"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100000金豆"
+                    android:textColor="@color/yellow" 
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sign_detail_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开场时间："
+                    android:textColor="@color/yellow" 
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/sign_time_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每天20:00准时开赛，22:00结束。"
+                    android:textColor="@color/yellow" 
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/sign_btn"
+                    style="@style/dialog_ok_btn_style"
+                    android:textStyle="bold"
+                    android:text="报  名"/>
+
+                <Button
+                    android:id="@+id/sign_cancel_btn"
+                    style="@style/dialog_cancle_btn_style"
+                    android:layout_marginLeft="50dp"
+                    android:textStyle="bold"
+                    android:text="退  出"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

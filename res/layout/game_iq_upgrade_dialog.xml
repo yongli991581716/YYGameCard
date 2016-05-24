@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/giud_layout"
+    android:layout_width="380dp"
+    android:layout_height="220dp"
+    android:background="@drawable/game_iq_upgrade_dialog_bg" >
+
+    <TextView
+        android:id="@+id/giud_content_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:text="恭喜您，等级达到150，不滞于物，草木竹石均可为剑，渐进于无剑胜有剑之境。（获得15000金豆，抽奖券15张）"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/giud_bottom_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/giud_help"
+            style="@style/dialog_cancle_btn_style"
+            android:layout_height="30dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/select1_btn_bg"
+            android:text="帮助" />
+        <!-- android:text="@string/dialog_cancell2" -->
+
+        <Button
+            android:id="@+id/giud_accept"
+            style="@style/dialog_ok_btn_style"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/common_cancel"
+            android:background="@drawable/select1_btn_bg"
+            android:text="确定" />
+        <!-- android:text="@string/dialog_ok2" / -->
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/giud_bottom_rl"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/iq_grade_dialog_slip_bar" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/game_iq_upgrade_dialog_title" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/giud_head_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/nongmin" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:background="@drawable/gongxining" />
+    </LinearLayout>
+
+</RelativeLayout>

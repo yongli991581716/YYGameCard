@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="think_language">
+        <item>菠萝菠萝蜜，来张大王吧！</item>
+        <item>放马过来，谁怕谁呢！</item>
+        <item>手气这么臭，以后上完厕所一定要洗手。</item>
+        <item>有事先走，下次再战咯！</item>
+        <item>我得意的笑，我得意的笑。</item>
+        <item>赌神啊，救救我吧！</item>
+        <item>这是从哪儿捞出来的一朵奇葩呀</item>
+        <item>这地主，比无产阶级还穷！</item>
+        <item>这里有没有女生呢？</item>
+        <item>机主很生气，后果很严重。</item>
+        <item>别走！看哥给你赢把大的。</item>
+        <item>炸？不炸。炸！不炸？</item>
+    </string-array>
+    <string-array name="mes_language">
+        <item>不好意思，手滑了一下，打错了。</item>
+        <item>我等得花儿也谢了！！</item>
+        <item>别闹了，好好打牌！</item>
+        <item>专心点，有点职业素质，不要老托管啊！</item>
+        <item>这牌也太烂了吧，投降输一半如何？</item>
+        <item>哥哥还是妹妹啊？</item>
+        <item>这牌打得太神了，威武啊，崇拜啊！</item>
+        <item>网络慢，不是我的问题。</item>
+        <item>人品好，牌品肯定好。</item>
+        <item>出来混，迟早要还。</item>
+        <item>美女，给大爷乐一个。</item>
+        <item>我的神啊，你就帮一手吧！</item>
+    </string-array>
+
+</resources>

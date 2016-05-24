@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_page_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/home_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- android:background="@drawable/home_bg" > -->
+
+        <ImageView
+            android:id="@+id/topimg_def_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <!-- 上面两个按钮  start -->
+
+        <ImageView
+            android:id="@+id/online_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="151dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/online_people_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="57dp"
+            android:text="43753"
+            android:textColor="@color/onlinecolor"
+            android:visibility="gone" />
+
+        <!-- 中间三个按钮  start -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal" >
+
+
+            <Button
+                android:id="@+id/doudizhu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dip"
+                android:paddingTop="23dp" />
+
+            <!-- 中间三个按钮  end -->
+        </RelativeLayout> 
+        <!-- 公告栏 -->
+
+        <RelativeLayout
+            android:id="@+id/gg_detail"
+            android:layout_width="400dp"
+            android:layout_height="280dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="28dp"
+                        android:paddingTop="20dp" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/gg_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:gravity="center_horizontal"
+                                android:textColor="#8C5709"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/gg_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="尊敬的玩家："
+                            android:textColor="#8C5709"
+                            android:textSize="@dimen/game_guanyu_size" />
+
+                        <TextView
+                            android:id="@+id/gg_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#8C5709"
+                            android:textSize="@dimen/game_guanyu_size" />
+
+                        <TextView
+                            android:id="@+id/gg_team"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="掌中游斗地主"
+                            android:textColor="#8C5709"
+                            android:textSize="@dimen/game_guanyu_size" />
+
+                        <TextView
+                            android:id="@+id/gg_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#8C5709"
+                            android:textSize="@dimen/game_guanyu_size" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/tishi_box"
+                    style="@style/gameCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="180dp"
+                    android:text="下次不再提醒       "
+                    android:textColor="#783C00" />
+
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="确定"
+                    android:textColor="#E83030" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- 底部三个按钮 -->
+</RelativeLayout>

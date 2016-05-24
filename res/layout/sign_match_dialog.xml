@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exchange_dialog_layout"
+    android:layout_width="480dp"
+    android:layout_height="310dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/recharge_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dialog_bg" >
+
+        <LinearLayout
+            android:id="@+id/gg_detail"
+            style="@style/sign_dialog"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/sign_dialog_ll"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sign_dialog_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="满十五人即开赛，无需报名费用，每局台费1000金豆，比赛结束自动结算，用户随时可以加入比赛，每轮淘汰6人，三局决出胜负。采用立出局赛制。"
+                    android:textColor="@color/brown"
+                    android:textSize="@dimen/sign_text_size" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/text_bg"
+                    android:text="奖品如下："
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <ListView
+                    android:id="@+id/sign_rank_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="125dp"
+                    android:layout_marginBottom="3dp"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:fadingEdge="none"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal" >
+
+                    <Button
+                        android:id="@+id/sign_rank_detail_btn"
+                         style="@style/dialog_com_btn_style"
+                        android:text="详情"/>
+
+                    <Button
+                        android:id="@+id/sign_rank_ok_btn"
+                        android:layout_marginLeft="180dp"
+                        style="@style/dialog_com_btn_style"
+                        android:text="报名" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/dialog_title_layout" />
+
+</RelativeLayout>

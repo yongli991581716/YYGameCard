@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 禁用时的图片背景 -->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/btn_orange_disable" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+
+    <!-- 点击时的图片背景 -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/btn_orange_selected" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+
+    <!-- 默认时的背景图片 -->
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="@color/btn_orange_normal" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,297 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="NotificationText">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="NotificationTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 按钮样式 -->
+    <style name="button_basic">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 黄色按钮 -->
+    <style name="orange_button" parent="@style/button_basic">
+        <item name="android:background">@drawable/selector_orange_corner</item>
+        <item name="android:textColor">@drawable/selector_text_color_white</item>
+    </style>
+    <!-- 蓝色按钮 -->
+    <style name="blue_button" parent="@style/button_basic">
+        <item name="android:background">@drawable/selector_blue_corner</item>
+        <item name="android:textColor">@drawable/selector_text_color_white</item>
+    </style>
+    <!-- 进度框 -->
+    <style name="dialog_basic_styles" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 浅黑色分割线样式 -->
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divider_dark</item>
+    </style>
+
+    <style name="trans_light_notitlebar_fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="AnimationFade">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
+    </style>
+
+    <style name="gameCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">12dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:button">@drawable/game_check_box</item>
+    </style>
+
+    <style name="topLeftLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="topRightLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bottomLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="end_result_Layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="stove_tip_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="end_bean_pic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cdd_end_Layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="end_layout_bgwh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="task_tip_btn">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="wait_image_wh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="room_type_wh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gamebaglayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cdd_selfpic_wh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cdd_otherpic_wh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="dz_top_wh">
+        <item name="android:layout_width">228dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="end_result_bgwh">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="newworktip">
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="task_tip_btn_style">
+        <item name="android:layout_width">@dimen/invitation_code_btn_width</item>
+        <item name="android:layout_height">@dimen/invitation_code_btn_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="dialog_no_btn_style">
+        <item name="android:layout_width">@dimen/dialog_btn_width</item>
+        <item name="android:layout_height">@dimen/dialog_btn_height</item>
+        <item name="android:textColor">@color/dialog_ok_btn_text_color</item>
+        <item name="android:textSize">@dimen/dialog_btn_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/red_ok_btn</item>
+    </style>
+    <!-- 取消按钮 -->
+    <style name="dialog_cancle_btn_style">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/dialog_ok_btn_text_color</item>
+        <item name="android:textSize">@dimen/dialog_btn_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/select_btn_bg</item>
+    </style>
+
+    <style name="dialog_ok_btn_style">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/dialog_ok_btn_text_color</item>
+        <item name="android:textSize">@dimen/dialog_btn_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/select1_btn_bg</item>
+    </style>
+
+    <style name="updialog_ok_btn_style">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">33dp</item>
+        <item name="android:textColor">@color/dialog_ok_btn_text_color</item>
+        <item name="android:textSize">@dimen/dialog_btn_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/select1_btn_bg</item>
+    </style>
+    <!-- 取消按钮 -->
+    <style name="dialog_cancle_btn_style2">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/dialog_ok_btn_text_color</item>
+        <item name="android:textSize">@dimen/dialog_btn_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/select_btn_bg</item>
+    </style>
+
+    <style name="dialog_ok_btn_style2">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">@color/dialog_ok_btn_text_color</item>
+        <item name="android:textSize">@dimen/dialog_btn_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/select1_btn_bg</item>
+    </style>
+
+    <style name="dialog_com_btn_style">
+        <item name="android:layout_width">@dimen/com_dialog_btn_width</item>
+        <item name="android:layout_height">@dimen/com_dialog_btn_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dialog_btn_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/red_ok_btn</item>
+    </style>
+    <!-- 游戏界面提示按钮Style -->
+    <style name="game_tishi_btn_style">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+    <!-- MM购买 -->
+    <style name="mm_buy_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dialog_cancell_btn_text_color</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!-- 手机话费 -->
+    <style name="phone_buy_btn_style">
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_width">310dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#7b0202</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+    <!-- 支付宝 -->
+    <style name="zhifubao_btn_style">
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_width">310dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#7b0202</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+    <!-- 加增 -->
+    <style name="jiazeng_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <!-- 预充值 Dialog -->
+    <style name="pre_recharge_rect_style">
+        <item name="android:layout_width">@dimen/pre_recharge_dialog_width</item>
+        <item name="android:layout_height">@dimen/pre_recharge_dialog_height</item>
+    </style>
+    <!-- 记牌器 -->
+    <style name="text_style_num">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="text_style_title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#981010</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:text">2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

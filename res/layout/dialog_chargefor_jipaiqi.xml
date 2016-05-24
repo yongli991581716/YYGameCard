@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jipaiqi_charge_root_ingame"
+    style="@style/login_dialog_wh"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/jipaiqi_charge_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/dialog_bg" 
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:padding="0dp" >
+
+        <TextView
+            android:id="@+id/text_charge_jipaiqi_notice"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/text_jipaiqitips"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size13"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/btn_jipaiqi_charge"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/general_btn_bg"
+            android:padding="0dp"
+            android:text="@string/text_pay_immediately"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <include layout="@layout/dialog_title_layout" />
+
+</RelativeLayout>

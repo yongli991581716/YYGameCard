@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 <!-- 移动充值卡充值方式，开关，设置1为支持，其他均为不支持 -->
+    <string name="gc_recharge_type_card">1</string>
+
+    <!-- 赠送充值卡充值方式，开关，设置1为支持，其他均为不支持 -->
+    <string name="gc_recharge_type_card_free">1</string>
+
+    <!-- 支付宝充值方式，开关，设置1为支持，其他均为不支持 -->
+    <string name="gc_recharge_type_alipay">1</string>
+    <string name="g_class_name">com.lordcard.ui.StartActivity</string>
+</resources>

@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guide_image_layout"
+    android:layout_width="@dimen/goods_list_width"
+    android:layout_height="@dimen/goods_list_height">
+
+    <LinearLayout
+        android:layout_width="@dimen/goods_list_width"
+        android:layout_height="@dimen/goods_list_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:textSize="24sp" >
+
+                <Button
+                    android:id="@+id/envalue_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/envalue_top_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="如何获取金豆？啊？"
+                    android:textColor="@color/yellow"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/guide_image_list"
+                android:layout_width="@dimen/guide_img_width"
+                android:layout_height="@dimen/guide_img_height"
+                android:layout_marginLeft="50dp"  
+                android:gravity="center_horizontal"
+                android:layout_marginRight="50dp" >
+
+                <com.lordcard.entity.MyGallery
+                    android:id="@+id/viewflipper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="20dp"
+                     >
+                </com.lordcard.entity.MyGallery>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

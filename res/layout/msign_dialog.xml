@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exchange_dialog_layout"
+    android:layout_width="450dp"
+    android:layout_height="300dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/recharge_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dialog_bg" >
+
+         <LinearLayout
+            android:id="@+id/gg_detail"
+            style="@style/sign_dialog"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/sign_dialog_ll"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sign_dialog_text1_tv"
+                    android:layout_width="@dimen/sign_slip_width"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#dc143c"
+                    android:textSize="@dimen/sign_text_size" />
+
+                <LinearLayout
+                    android:id="@+id/sign_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/sign_layout_height" >
+
+                    <com.lordcard.ui.view.AlignLeftGallery
+                        android:id="@+id/sign_gallery"
+                        android:layout_width="10000dp"
+                        android:layout_height="fill_parent"
+                        android:fadingEdgeLength="0dip"	 
+                        android:spacing="1dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sign_dialog_text2_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每天登录签到可获得系统奖励，连续签到时间越长，奖励越丰厚，继续努力哦！"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/sign_text_size" />
+
+                <TextView
+                    android:id="@+id/sign_dialog_text3_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#dc143c"
+                    android:textSize="@dimen/sign_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/sign_relative_layout_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal" >
+
+                    <Button
+                        android:id="@+id/sign_dialog_back_btn"
+                        style="@style/dialog_com_btn_style"
+                        android:text="返回"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/sign_dialog_ok_btn"
+                        style="@style/dialog_com_btn_style"
+                        android:layout_centerHorizontal="true"
+                        android:text="充值"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/dialog_title_layout" />
+
+</RelativeLayout>

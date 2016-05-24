@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/rebootPopDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_basic_shape" >
+
+        <TextView
+            android:id="@+id/dialogTile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/version_update"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:id="@+id/horizontalDividingLine"
+            style="@style/divider"
+            android:layout_below="@+id/dialogTile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/main_color" />
+
+        <ScrollView
+            android:id="@+id/logLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontalDividingLine" >
+
+            <RelativeLayout
+                android:id="@+id/logView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/updateTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dialogTips"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#8c8c8c"
+                    android:textSize="12sp"
+                    tools:ignore="UnknownIdInLayout,RtlHardcoded" />
+
+                <LinearLayout
+                    android:id="@+id/llv_upgrade_apk_progress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dip"
+                    android:visibility="gone"
+                    tools:ignore="RtlHardcoded" >
+
+                    <ProgressBar
+                        android:id="@+id/update_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/update_progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:textColor="@color/white"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/controlLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/updateTips"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:id="@+id/horizontalDividingLine2"
+                        style="@style/divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:divider="@drawable/divider_line_vertical"
+                        android:orientation="horizontal"
+                        android:showDividers="middle"
+                        tools:ignore="UselessLeaf" >
+
+                        <Button
+                            android:id="@+id/btn_dialog_cancle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/white_selector"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/version_update_cancle"
+                            android:textColor="@color/black"
+                            tools:ignore="ButtonStyle" />
+
+                        <Button
+                            android:id="@+id/btn_dialog_confirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/white_selector"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/version_update_confirm"
+                            android:textColor="@color/main_color"
+                            tools:ignore="ButtonStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

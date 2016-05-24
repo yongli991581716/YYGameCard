@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <TextView
+        android:id="@+id/stove_stuff_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="钻石"
+        android:textColor="@color/brown"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/stove_stuff_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="1"
+        android:textColor="@color/brown"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/stove_stuff_need"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="10000"
+        android:textColor="@color/brown"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_tip_layout"
+    android:layout_width="430dp"
+    android:layout_height="240dp"
+    android:background="@drawable/photo_bg" >
+
+    <!-- android:background="@drawable/alert_bg" > -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageview_title"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/game_setting_tip" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_title"
+            android:background="@drawable/bag_wire" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_marginLeft="@dimen/setting_tip_left"
+        android:layout_marginTop="60dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="震动开关:"
+            android:textColor="@color/gold"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/checkzhendong"
+            android:layout_width="68dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/open" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_toRightOf="@+id/zhen"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="60dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="静    音:"
+            android:textColor="@color/gold"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/jingyin"
+            android:layout_width="68dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/open" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_marginLeft="@dimen/setting_tip_left"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="手势引导:"
+            android:textColor="@color/gold"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/arrow"
+            android:layout_width="68dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/open" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/zhen" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="背景音乐:"
+            android:textColor="@color/gold"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/bgmusic"
+            android:layout_width="68dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/open" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/dialog_cancle_btn_style"
+            android:layout_marginRight="170dp"
+            android:text="取消"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/sure"
+            style="@style/dialog_ok_btn_style"
+            android:text="保存"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音效:"
+            android:textColor="@color/gold"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/voice_off" />
+
+            <SeekBar
+                android:id="@+id/musicControl"
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:progressDrawable="@drawable/seekbar_define_style"
+                android:thumb="@drawable/voice_thumb"
+                android:thumbOffset="-5dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/voice_on" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

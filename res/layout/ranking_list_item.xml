@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/ranking_list_item_width"
+    android:layout_height="fill_parent"
+    android:background="#FEF5B2" >
+
+    <Button
+        android:id="@+id/ranking_left_btn"
+        android:layout_width="@dimen/ranking_left_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ranking_left_btn_marginLeft"
+        android:layout_marginTop="@dimen/ranking_item_marginTop"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/ranking_item_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ranking_item_nick_marginLeft"
+        android:layout_marginTop="@dimen/ranking_item_marginTop"
+        android:padding="5dp"
+        android:text="asdfa"
+        android:textColor="#322610"
+        android:textSize="@dimen/ranking_item_size" />
+
+    <TextView
+        android:id="@+id/ranking_item_bean_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ranking_item_bean_count_marginLeft"
+        android:layout_marginTop="@dimen/ranking_item_marginTop"
+        android:padding="5dp"
+        android:text="1234567"
+        android:textColor="#322610"
+        android:textSize="@dimen/ranking_item_size" />
+
+    <TextView
+        android:id="@+id/ranking_item_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ranking_item_unit_marginLeft"
+        android:layout_marginTop="@dimen/ranking_item_marginTop"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="#322610"
+        android:textSize="30px" />
+
+    <Button
+        android:id="@+id/ranking_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ranking_right_btn_marginLeft"
+        android:layout_marginTop="@dimen/ranking_item_marginTop"
+        android:visibility="gone"
+        android:padding="5dp" />
+
+</RelativeLayout>

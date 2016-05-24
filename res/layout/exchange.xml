@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exchange_dialog_layout"
+    android:layout_width="440dp"
+    android:layout_height="290dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/exchange_relayout"
+        android:layout_width="fill_parent"
+        android:layout_height="290dp"
+        android:background="@drawable/dialog_bg" >
+
+        <TextView
+            android:id="@+id/recharge_text_layout"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="45dp"
+            android:text="请填写您的个人信息，我们将把您的物品邮递给您，进行手工登记。"
+            android:textColor="#7b0202"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/recharge_name_layout"
+            android:layout_width="440dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/recharge_text_layout"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="收件人:"
+                android:textColor="#7b0202"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/name_text"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/textview_bg"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recharge_adress_layout"
+            android:layout_width="440dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/recharge_name_layout"
+            android:layout_below="@+id/recharge_name_layout"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="地址:"
+                android:textColor="#7b0202"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/adress_text"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/textview_bg"
+                android:imeOptions="actionNext"
+                android:paddingLeft="5dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recharge_email_layout"
+            android:layout_width="440dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/recharge_adress_layout"
+            android:layout_below="@+id/recharge_adress_layout"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="邮编 :"
+                android:textColor="#7b0202"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/email_text"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/textview_bg"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recharge_phone_layout"
+            android:layout_width="440dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/recharge_email_layout"
+            android:layout_below="@+id/recharge_email_layout"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="手机:"
+                android:textColor="#7b0202"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/phone_text"
+                android:layout_width="250dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/textview_bg"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/recharge_phone_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_red"
+            android:text="确     定"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <include layout="@layout/dialog_title_layout" />
+
+</RelativeLayout>

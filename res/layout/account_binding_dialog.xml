@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_binding_dialog_rl"
+    android:layout_width="450dp"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/account_binding_dialog_layout"
+        android:layout_width="450dp"
+        android:layout_height="320dp"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/account_binding_relayout"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" >
+
+            <TextView
+                android:id="@+id/recharge_text_layout"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/account_bind_text"
+                android:textColor="#7b0202"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/recharge_name_layout1"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recharge_text_layout"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="游戏ID:"
+                        android:textColor="#7b0202"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/game_id"
+                        android:layout_width="115dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_bg"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text=""
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="游戏账号:"
+                        android:textColor="#7b0202"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/game_account1"
+                        android:layout_width="115dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_bg"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text=""
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recharge_name_layout2"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recharge_text_layout"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="游戏ID:"
+                        android:textColor="#7b0202"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/game_account"
+                        android:layout_width="90dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_bg"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="绑定账号:"
+                        android:textColor="#7b0202"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/game_rela_account"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/textview_bg"
+                        android:digits="@string/rule_password"
+                        android:hint="英文或数字(6-8位)"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="text"
+                        android:maxLength="8"
+                        android:paddingLeft="5dp"
+                        android:selectAllOnFocus="true" />
+
+                    <ImageView
+                        android:id="@+id/new_account_ok_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/yes"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="密码 :"
+                        android:textColor="#7b0202"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/new_password_edt"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/textview_bg"
+                        android:digits="@string/rule_password"
+                        android:hint="@string/password_hint"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLength="12"
+                        android:paddingLeft="5dp" />
+
+                    <ImageView
+                        android:id="@+id/new_password_ok_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/yes"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="确认密码:"
+                        android:textColor="#7b0202"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/check_password_edt"
+                        android:layout_width="250dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/textview_bg"
+                        android:digits="@string/rule_password"
+                        android:hint="@string/password_hint"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:maxLength="12"
+                        android:paddingLeft="5dp" />
+
+                    <ImageView
+                        android:id="@+id/check_password_ok_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:digits="@string/rule_password"
+                        android:src="@drawable/no"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok_btn"
+                style="@style/dialog_com_btn_style"
+                android:layout_below="@+id/recharge_name_layout2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="确     定" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/dialog_title_layout" />
+</RelativeLayout>

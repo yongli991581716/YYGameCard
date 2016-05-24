@@ -1,0 +1,215 @@
+﻿<resources>
+
+    <item name="view_tag_id" type="id"></item>
+    <!-- 版本升级 -->
+    <string name="version_update">版本更新</string>
+    <string name="version_update_cancle">取消</string>
+    <string name="version_update_confirm">升级</string>
+    <string name="firm">确定</string>
+    <!-- 登录 -->
+    <string name="my">我的</string>
+    <string name="forgetpswd">忘记密码?</string>
+    <string name="acc">手机号码</string>
+    <string name="login">登录</string>
+    <string name="weixin_login">微信登录</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="morelogin">    或使用以下方式登录    </string>
+    <string name="more">更多</string>
+    <string name="register">注册</string>
+    <string name="phone_register">手机号码注册</string>
+    <string name="phoneregister">通过手机号注册</string>
+    <string name="phone">手机号码:</string>
+    <string name="password">密码:</string>
+    <string name="pswd">密码</string>
+    <string name="hint">6位-12位数字、字母或下划线组成</string>
+    <!-- 相关提示信息 -->
+    <string name="desc">abc</string>
+    <string name="app_name">YY斗地主</string>
+    <string name="net_interrupt">网络连接异常,请稍候再试</string>
+    <string name="gs_update">游戏服务器临时维护，请重新进入</string>
+    <string name="net_timeout">网络连接超时</string>
+    <string name="net_fail">网络连接失败</string>
+    <string name="email_hint">请输入正确邮箱。</string>
+    <string name="alias_name_hint">请输入10位内的昵称</string>
+    <string name="password_hint">英文或数字(6-12位)</string>
+    <string name="rule_password">0123456789abcdefghijgklmnopqrstuvwxyz</string>
+    <string name="play1name">游戏玩家1</string>
+    <string name="play2name">游戏玩家2</string>
+    <string name="telphone_label_cyp">将调用系统短信功能向该手机发送短信验证码，输入获取到的验证码即可获取1万金豆 。</string>
+    <string name="userinfo_msg">完善个人信息获取金豆</string>
+    <string name="frients_label_msg">"       "在通讯录中点选好友，点击完成后，将调用系统短信功能向好友分享您的游戏信息。</string>
+    <string name="show_pwd">显示密码</string>
+    <string name="remember_pwd">记住密码</string>
+    <string name="account_text">账号:</string>
+    <string name="email_text">邮箱:</string>
+    <string name="pay_back">返回</string>
+    <string name="sign_up">报名</string>
+    <string name="Ensure">"确定"</string>
+    <string name="pay_record">记录</string>
+    <string name="alipay_button_title">若您刚才已成功安装支付宝服务，便可以支付了</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+    <string name="code_4003">该用户绑定的支付 宝账户被冻结或不允许支付</string>
+    <string name="code_4004">该用户已解除绑定</string>
+    <string name="code_4005">绑定失败或没有绑定</string>
+    <string name="code_4006">订单支付失败</string>
+    <string name="code_4010">重新绑定账户</string>
+    <string name="code_6000">支付服务正在进行升级操作</string>
+    <string name="code_6001">您已取消支付操作</string>
+    <string name="code_6002">网络连接异常</string>
+    <string name="Cancel">"取消"</string>
+    <string name="confirm_install_hint">安装提示</string>
+    <string name="confirm_install">保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。</string>
+    <string name="pay_tip">充值功能暂未开启</string>
+    <string name="ranking">排名</string>
+    <string name="text_nick">昵称</string>
+    <string name="text_bean">金豆</string>
+    <string name="my_bean">我的金豆:</string>
+    <string name="vip_join_tip">"             "本房间相约好友一起娱乐，可自定义倍数（2-100倍），最低2万金豆准入。 </string>
+    <string name="game_about1">"      "YY斗地主游戏是四川YY信息技术有限公司旗下游戏品牌，是国内一流的游戏公司，主要产品是休闲棋牌游戏，大型网络游戏，游戏运营平台等。 </string>
+    <string name="game_about2">"       "</string>
+    <string name="game_about3">"       "四川YY信息技术有限公司作为一家负责任的企业，致力于用户的游戏体验，所有用户的充值将由第三方支付平台监管和代收费，杜绝隐性收费，请大家放心充值！</string>
+    <string name="game_aboutphone">"       "</string>
+    <string name="game_aboutqq">"       " </string>
+    <string name="game_about_mz">"       " </string>
+    <string name="game_about_mz1">""1、为了保障《YY斗地主》业务发展的自主权，《YY斗地主》有权自行修改、升级游戏客户端，必要时修改或升级会以公告形式进行公布。</string>
+    <string name="game_about_mz2">""2、使用本客户端可能存在来自他人匿名或者冒名的含有威胁、毁谤、令人反感或者非法内容的信息风险，用户须明白并自行承担以上风险，《YY斗地主》不对任何有关信息真实性、适用性、合法性承担责任。</string>
+    <string name="game_about_mz3">""3、用户因第三方通讯线路故障、技术问题、网络问题、电脑故障、系统不稳定性及其他各种不可抗力原因而遭受的经济损失，《YY斗地主》不承担责任。</string>
+    <string name="game_about_mz4">""4、因技术故障等不可抗事件影响到服务器正常运行，《YY斗地主》承诺在第一时间内与相关单位配合，及时处理进行修复，但用户因此而遭受的经济损失，《YY斗地主》不承担责任。</string>
+    <string name="game_about_mz5">""5、用户之间通过本客户端进行交往，因受误导或欺骗而导致或可能导致的任何心理、生理上的伤害以及经济损失，由过错方依法承担所有责任，一概与《YY斗地主》无关。</string>
+    <string name="game_about_mz6">""6、游戏中使用到的游戏币等均为游戏道具，不具有任何财产性功能，只限用户本人在游戏中使用；本游戏对于用户所拥有的游戏金币不提供任何形式官方回购、直接或变相兑换现金或实物等服务及相关功能；本游戏严禁用户之间在游戏中及线下进行任何互相叫卖、转让游戏币、涉赌等行为，如一经查出则永久封杀，账户清零。</string>
+    <string name="game_about_rule">"       "游戏说明:</string>
+    <string name="game_about_rule1">YY斗地主各大赛场起始倍数为赛场倍数， 基本单位为底注所注明数量的金豆， 达到准入条件才能进入相应赛场， 每局游戏消耗金豆与赛场倍数相关（底注 x 倍数 x 0.75）， 金豆不足5000将获赠金豆， 每次5000金豆，  每人每天最少一次， 运气好时可获赠多次。 </string>
+    <string name="game_join">智能拼桌中</string>
+    <string name="vip_room_lable">VIP房 :</string>
+    <string name="telphone_tip">大奖赛领奖时客服将联系此号码，请认真填写。</string>
+    <string name="award">"        "领奖提示：请到金豆赠送界面填写本机号码，工作人员会在开奖后两个星期内主动联系获奖者，领奖过程中不会要求获奖者交付任何费用，请放心领奖。 </string>
+    <string name="download_tip_msg">每下载一个应用，并且激活使用1分钟以上，可获金豆2万</string>
+    <!-- begin支付相关 -->
+    <string name="pay_dialog_msg">"        "此房间需要{limit}金豆才能进入，您的金豆不足。您将购买{buybean}万金豆({buybean}万金豆等同于{buybean}元)，确定后将跳转到支付界面购买，如果要购买更多金豆，请点击“其他金额购买”，您也可以通过完善资料来免费获取金豆。关闭此窗口直接返回不扣费。确认购买？</string>
+    <string name="pay_dialog_msg2">"        "您将通过短信充值方式购买YY提供的{limit}万金豆, {limit}元每条, 不含通信费, 确认后发送短信购买; 关闭此窗口不扣费,确认购买?</string>
+    <string name="pay_dialog_msg3">"        "  此房间需要{limit}金豆才能进入，您的金豆不足。您将通过短信方式购买YY提供的{buybean}万金豆，{buybean}元每条，不含通信费。确认后发短信购买，关闭此窗口不扣费。确认购买？ </string>
+    <string name="pay_dialog_msg4">"        "您的金豆不足,您将购买YY提供的{buybean}万金豆({buybean}万金豆等同于{buybean}元)，确定后将进行购买, 不含通信费.; 关闭此窗口不扣费.确认购买?</string>
+    <string name="sign_msg">如果您想获取更多金豆，可以通过我们的充值平台获取{buybean}万金豆，点击确定充值</string>
+    <!-- end支付相关 -->
+
+
+    <!-- dialog 提示信息 -->
+    <string name="no_join_home">您申请加入的房间不存在！</string>
+    <string name="no_game_server">游戏服务器暂未开启！</string>
+    <string name="link_server_fail">您的网络缓慢,请稍候再试！</string>
+    <string name="room_create_fail">创建Vip包房失败，请稍候在试!</string>
+    <string name="invite_friend_fail">邀请好友失败，请稍候在试!</string>
+    <string name="game_playing">上次游戏还没有结束，请稍候再试!</string>
+    <string name="vip_create_fail">vip包房创建失败，请稍候再试!</string>
+    <string name="dialog_cancell">取    消</string>
+    <string name="dialog_ok">确    定</string>
+    <string name="dialog_cancell2">取消</string>
+    <string name="dialog_ok2">确定</string>
+    <string name="recharge">充    值</string>
+    <string name="change">更新</string>
+    <string name="do_not_change_now">暂不更新</string>
+    <string name="get_zhidou">免费获取金豆</string>
+    <string name="other_money_to_by">其他金额购买</string>
+    <string name="chose_goods">选择物品</string>
+    <string name="buy">购买</string>
+    <!-- 充金豆 1 -->
+    <string name="pay_type1_1">1元话费/短信充值=1万金豆</string>
+    <string name="pay_type1_2">2元话费/短信充值=2万金豆</string>
+    <string name="pay_type1_4">4元话费/短信充值=4万金豆</string>
+    <string name="pay_type1_5">5元话费/短信充值=5万金豆</string>
+    <string name="pay_type1_8">8元话费/短信充值=8万金豆</string>
+    <string name="pay_type1_10">10元话费/短信充值=10万金豆</string>
+    <string name="pay_type1_15">15元话费/短信充值=15万金豆</string>
+    <string name="pay_type1_20">20元话费/短信充值=20万金豆</string>
+    <string name="pay_type1_25">25元话费/短信充值=25万金豆</string>
+    <string name="pay_type1_30">30元话费/短信充值=30万金豆</string>
+    <!-- 充金豆 2 -->
+    <string name="pay_type2_5">5元话费/短信充值=50万金豆</string>
+    <string name="pay_type2_10">10元话费/短信充值=100万金豆</string>
+    <string name="pay_type2_30">30元话费/短信充值=300万金豆</string>
+    <string name="pay_type3_10">10元支付宝充值=120万金豆</string>
+    <string name="pay_type3_20">20元支付宝充值=250万金豆</string>
+    <string name="pay_type3_100">100元支付宝充值=130万金豆</string>
+    <!-- 充金豆 3 -->
+    <string name="pay_type4_5">5万金豆            价格：¥5</string>
+    <string name="pay_type4_10">10万金豆         价格：¥10</string>
+    <string name="pay_type4_20">20万金豆         价格：¥20</string>
+    <string name="pay_type4_100">100万金豆       价格：¥100</string>
+    <string name="pay_type4_300">300万金豆       价格：¥300</string>
+    <!-- 充金豆 4 -->
+    <string name="pay_type5_1">1元=1万金豆</string>
+    <string name="pay_type5_2">2元=2万金豆</string>
+    <string name="pay_type5_4">4元=4万金豆</string>
+    <string name="pay_type5_5">5元=5万金豆</string>
+    <string name="pay_type5_8">8元8万金豆</string>
+    <string name="pay_type5_10">10元=10万金豆</string>
+    <string name="pay_type5_15">15元=15万金豆</string>
+    <string name="pay_type5_20">20元=20万金豆</string>
+    <string name="pay_type5_25">25元=25万金豆</string>
+    <string name="pay_type5_30">30元=30万金豆</string>
+    <string name="pay_type5_40">40元=40万金豆</string>
+    <string name="pay_type5_50">50元=50万金豆</string>
+    <string name="account_bind_text">为了保障您的权益，请记住您的游戏ID或绑定一个您可以记住的账号和密码，您可以使用游戏ID或新绑定的账号登录。</string>
+    <string name="account_bind_ok_text">请记住您的账号和密码，如有丢失，请通过email找回您的密码，也可通过客服进行账号申诉</string>
+    <!-- 结束对话框 -->
+    <!-- PreCharge Text -->
+    <string name="weixinfenxiang">微信分享</string>
+    <string name="again_btn">再来一局</string>
+    <string name="back_btn">返回大厅</string>
+    <string name="bomb">炸弹</string>
+    <string name="multiple_100">100</string>
+    <string name="nick_name">Lord Card</string>
+    <string name="image_description">Image of Lord Card</string>
+    <string name="btn_text_play_again">再来一局</string>
+    <string name="btn_text_back_tohall">返回大厅</string>
+    <string name="text_pre_recharge_title">预充值</string>
+    <string name="text_pre_recharge_title_no_bills">预充值(不扣费)</string>
+    <string name="text_pre_recharge_notice_one">您当前只有%1$s金豆 只能赢%2$s金豆</string>
+    <string name="text_pre_recharge_notice_two">注：充值后如果输牌，也只输%1$s金豆</string>
+    <string name="text_pre_recharge_bureau_wager">(本局赌注：%1$s)</string>
+    <string name="text_pay_immediately">立即充值</string>
+    <string name="total_multiple">总倍数</string>
+    <string name="base_chip">底注</string>
+    <string name="text_brains">经验</string>
+    <string name="text_total_beans">%1$s</string>
+    <string name="text_can_win_beans">可赢%1$s</string>
+    <string name="text_current_beans">当前金豆：</string>
+    <string name="text_charge_w">%1$d万</string>
+    <string name="text_charge_yuan">%1$d元</string>
+    <string name="text_iq">，等级：</string>
+    <string name="text_precharge_status">当前金豆：<g id="part1">%1$s</g>，等级：<g id="part2">%2$s</g></string>
+    <string name="text_prerecharge_description_one">您目前有%1$s冻结资金:</string>
+    <string name="text_prerecharge_description_two">预充值所得%1$s金豆</string>
+    <string name="text_prerecharge_description_three">牌局所赢得%1$s金豆</string>
+    <string name="text_prerecharge_order_create_failed">预充值订单生成失败！</string>
+    <string name="text_prerecharge_order_create_success">成功生成预充值订单！</string>
+    <string name="text_prerecharge_order_result_failed">预充值订单生成失败！</string>
+    <string name="text_recharge_notice">可赢15000金豆，只输5000金豆</string>
+    <string name="text_pre_recharge_2w">预充值2万金豆</string>
+    <string name="text_pre_recharge_5w">预充值5万金豆</string>
+    <string name="text_pre_recharge_10w">预充值10万金豆</string>
+    <string name="text_charge">充值</string>
+    <string name="text_defreeze_beans">即可解冻资金。</string>
+    <string name="text_defreeze_from_record_one">也可稍候到游戏</string>
+    <string name="text_defreeze_from_record_two">大厅->充值->记录中进行充值。</string>
+    <string name="text_charge_later">稍候充值</string>
+    <string name="text_time">时间</string>
+    <string name="text_money">金额</string>
+    <string name="text_beans">金豆</string>
+    <string name="text_status">状态</string>
+    <string name="text_w">万</string>
+    <string name="text_slide">滑动</string>
+    <string name="text_jipaiqi">记牌器</string>
+    <string name="text_jipaiqitips">记牌器每天免费使用一次，每充值1元可使用1天。</string>
+    <string name="company_name"></string>
+    <!-- YY有限公司 -->
+    <string name="company_phone"></string>
+    <!-- 4000666899 -->
+    <string name="sms_type_yd">0</string>
+    <!-- 计费方式 移动 不可修改 -->
+    <string name="sms_type_dx">1</string>
+    <!-- 计费方式 电信 不可修改 -->
+    <string name="sms_type">0</string>
+    <!-- 计费方式 0 移动 1 电信 -->
+
+</resources>

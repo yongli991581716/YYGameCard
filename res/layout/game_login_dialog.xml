@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_dialog_wh_mst"
+    style="@style/login_dialog_wh"
+    android:layout_centerHorizontal="true" >
+
+    <RelativeLayout
+        android:id="@+id/gamelogin_dialog_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_bg" >
+
+        <EditText
+            android:id="@+id/login_dl_account"
+            style="@style/login_dialog_edt_wh"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/textview_bg"
+            android:digits="@string/rule_password"
+            android:drawableLeft="@drawable/login_person"
+            android:hint="账号"
+            android:imeOptions="actionNext|flagNoExtractUi"
+            android:inputType="text"
+            android:maxLength="15"
+            android:paddingLeft="5dp"
+            android:textSize="16sp"
+            android:selectAllOnFocus="true" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+
+        <ImageView
+            android:id="@+id/show"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/login_dl_account"
+            android:layout_alignRight="@+id/login_dl_account"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/ppt_down" >
+        </ImageView>
+
+        <EditText
+            android:id="@+id/login_dl_account_pwd"
+            style="@style/login_dialog_edt_wh"
+            android:layout_below="@+id/login_dl_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dialog_space"
+            android:background="@drawable/textview_bg"
+            android:digits="@string/rule_password"
+            android:drawableLeft="@drawable/login_key"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLength="25"
+            android:textSize="16sp"
+            android:paddingLeft="5dp" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/login_dl_account_pwd"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <Button
+                android:id="@+id/login_dl_login_btn"
+                style="@style/login_dialog_btn_wh"
+                android:background="@drawable/btn_red"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/login_dl_forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/login_dl_login_btn"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="找回密码"
+                android:textStyle="bold"
+                android:textColor="#783C00"
+                android:textSize="14dp" />
+            
+             <Button
+                android:id="@+id/game_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/login_dl_forget_pwd"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="一秒注册"
+                android:textColor="#783C00"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/dialog_title_layout" />
+
+</RelativeLayout>

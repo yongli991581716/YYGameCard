@@ -1,0 +1,1793 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doudizhu_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 超快赛  end -->
+
+    <RelativeLayout
+        android:id="@+id/doudizhugame_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/game_desk" />
+
+        <!-- 比赛场文字提示 start -->
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </ViewFlipper>
+
+        <LinearLayout
+            android:id="@+id/doudizhu_gp_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="83dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/doudizhu_kuai_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#6e0101"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/doudizhu_slip_img"
+                android:layout_width="250dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="3dp"
+                android:background="@drawable/red_slip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/doudizhu_game_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6e0101"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/doudizhu_game_round_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#6e0101"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/doudizhu_game_sorce_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6e0101"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/doudizhu_game_rank_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#6e0101"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_new_iv"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="98dp"
+            android:visibility="visible" />
+
+        <com.lordcard.ui.view.RecordPorkerView
+            android:id="@+id/jipaiqi_record_view"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="135dp"
+            android:visibility="invisible" />
+
+        <com.lordcard.ui.view.MainGameGuideView
+            android:id="@+id/main_game_guide_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:visibility="gone" />
+
+        <!-- 比赛场文字提示 end -->
+        <!-- android:background="@drawable/background_1" > -->
+        <!-- 玩家自己  头像    遮罩    startd -->
+
+        <LinearLayout
+            android:id="@+id/self_pic_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/null_tv"
+                android:layout_width="100dp"
+                android:layout_height="87dp"
+                android:background="@null"
+                android:clickable="false"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/game_self_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/top_1"
+                    android:layout_width="85dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp" >
+
+                    <!-- android:background="@drawable/head_pic_self" > -->
+                    <!--
+                    android:layout_width="@dimen/head_pic_width"
+                    android:layout_height="@dimen/head_pic_height"
+                    -->
+
+                    <RelativeLayout
+                        android:id="@+id/bottom_rl"
+                        style="@style/ddz_pic_wh" >
+
+                        <ImageView
+                            android:id="@+id/self_pic"
+                            style="@style/head_pic_wh"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/head_bg2" />
+
+                        <ImageView
+                            android:id="@+id/playimageView1"
+                            style="@style/head_pic_wh"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/nongmin_girl" />
+                        <!-- android:background="@drawable/nongmin" -->
+
+                        <ImageView
+                            android:id="@+id/zhezhao1"
+                            style="@style/head_pic_wh"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:visibility="gone" />
+
+                        <!-- android:background="@drawable/touxiangzhezhao" -->
+
+                    </RelativeLayout>
+
+                    <TextView
+                        style="@style/main_game_puker_num_wh"
+                        android:layout_alignBottom="@+id/bottom_rl"
+                        android:layout_marginBottom="@dimen/puker_margin_buttom"
+                        android:layout_toRightOf="@+id/bottom_rl"
+                        android:background="@drawable/pukes"
+                        android:gravity="center"
+                        android:textColor="@color/gold"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/play1_surplus_count"
+                        style="@style/main_game_puker_num_wh"
+                        android:layout_alignBottom="@+id/bottom_rl"
+                        android:layout_marginBottom="@dimen/puker_margin_buttom"
+                        android:layout_toRightOf="@+id/bottom_rl"
+                        android:gravity="center"
+                        android:text="17"
+                        android:textColor="@color/gold"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/self_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_1"
+                    android:layout_marginTop="@dimen/user_name_margin"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/playTextView1"
+                        android:layout_width="@dimen/head_width"
+                        android:layout_height="@dimen/play_textview_height"
+                        android:layout_gravity="top"
+                        android:background="@drawable/game_text_bg"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="智能玩家3"
+                        android:textColor="#FFF402"
+                        android:textSize="11dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/presonal_bean_layout"
+                    android:layout_width="@dimen/head_width"
+                    android:layout_height="@dimen/play_textview_height"
+                    android:layout_below="@+id/self_ll"
+                    android:layout_marginTop="-2dp"
+                    android:background="@drawable/game_text_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+                        android:text="金豆:"
+                        android:textColor="#FFF402"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/presonal_bean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:gravity="center"
+                        android:text="20000"
+                        android:textColor="#FFF402"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/double1_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="17dp"
+                    android:layout_alignBottom="@+id/self_ll"
+                    android:layout_alignRight="@+id/top_1"
+                    android:src="@drawable/jiabei_x_2"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/my_dunpai_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/dunpairl1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null" >
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/iq1_tv"
+                        style="@style/iq_tv_wh"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="11dp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/null_tv2"
+                android:layout_width="100dp"
+                android:layout_height="93dp"
+                android:background="@null"
+                android:clickable="false"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <!-- 玩家自己的定时器   start -->
+
+        <TextView
+            android:id="@+id/play1Order"
+            style="@style/main_game_clock_wh"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="130dp"
+            android:background="@drawable/time"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="#BD0B0B"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/play1Time"
+            style="@style/main_game_clock_wh"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="130dp"
+            android:background="@drawable/time"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="#BD0B0B"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <!-- 结束数输赢金豆动画Tv -->
+
+        <TextView
+            android:id="@+id/play1_winners_or_losers_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/self_pic_layout"
+            android:layout_marginTop="55dp"
+            android:layout_toRightOf="@+id/top_left_head"
+            android:text=""
+            android:textSize="22sp" />
+        <!-- 玩家自己已出的牌  start -->
+
+
+        <!-- 玩家自己已出的牌  end -->
+
+
+        <!-- 玩家左上角  头像    遮罩     start -->
+
+        <RelativeLayout
+            android:id="@+id/top_left_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/top_left_rl"
+                style="@style/main_game_head_wh1" >
+
+                <!-- android:background="@drawable/head_pic_left" > -->
+
+                <RelativeLayout
+                    android:id="@+id/left_rl"
+                    style="@style/ddz_pic_wh" >
+
+                    <ImageView
+                        android:id="@+id/left_pic"
+                        style="@style/head_pic_wh"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/head_bg2" />
+
+                    <ImageView
+                        android:id="@+id/playimageView3"
+                        style="@style/head_pic_wh"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/nongmin" />
+                    <!-- android:background="@drawable/nongmin" -->
+
+                    <ImageView
+                        android:id="@+id/zhezhao3"
+                        style="@style/head_pic_wh"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <!-- 左上角玩家牌数   start -->
+
+                <TextView
+                    style="@style/main_game_puker_num_wh"
+                    android:layout_alignBottom="@+id/left_rl"
+                    android:layout_marginBottom="@dimen/puker_margin_buttom"
+                    android:layout_toRightOf="@+id/left_rl"
+                    android:background="@drawable/pukes"
+                    android:gravity="center"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/play3_surplus_count"
+                    style="@style/main_game_puker_num_wh"
+                    android:layout_alignBottom="@+id/left_rl"
+                    android:layout_marginBottom="@dimen/puker_margin_buttom"
+                    android:layout_toRightOf="@+id/left_rl"
+                    android:gravity="center"
+                    android:text="17"
+                    android:textColor="@color/gold"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- 左上角玩家牌数   end -->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/top_left_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_left_rl"
+                android:layout_marginTop="@dimen/user_name_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/playTextView3"
+                    android:layout_width="@dimen/head_width"
+                    android:layout_height="@dimen/play_textview_height"
+                    android:layout_gravity="top"
+                    android:background="@drawable/game_text_bg"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="智能玩家3"
+                    android:textColor="#FFF402"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/double3_iv"
+                android:layout_width="20dp"
+                android:layout_height="17dp"
+                android:layout_alignBottom="@+id/top_left_ll"
+                android:layout_toRightOf="@+id/top_left_ll"
+                android:src="@drawable/jiabei_x_2"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dun_layout_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/dunpairl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:background="@null" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/iq3_tv"
+                style="@style/iq_tv_wh"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="11dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/play3Order"
+            style="@style/main_game_clock_wh"
+            android:layout_marginLeft="@dimen/time_margin"
+            android:layout_marginTop="@dimen/time_margin_top"
+            android:layout_toRightOf="@+id/top_left_head"
+            android:background="@drawable/time"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="#BD0B0B"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <!-- 左上角玩家定时器   start -->
+
+        <TextView
+            android:id="@+id/play3Time"
+            style="@style/main_game_clock_wh"
+            android:layout_marginLeft="@dimen/time_margin"
+            android:layout_marginTop="@dimen/time_margin_top"
+            android:layout_toRightOf="@+id/top_left_head"
+            android:background="@drawable/time"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="#BD0B0B"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <!-- 左上角玩家定时器   end -->
+
+        <RelativeLayout
+            android:id="@+id/play3_pass_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pass_card_margin_top"
+            android:layout_toRightOf="@+id/jipaiqi_layout_left" >
+        </RelativeLayout>
+
+        <!-- 结束数输赢金豆动画Tv -->
+
+        <TextView
+            android:id="@+id/play3_winners_or_losers_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/top_left_head"
+            android:layout_toRightOf="@+id/top_left_head"
+            android:text=""
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:id="@+id/top_right_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/top_right_rl"
+                style="@style/main_game_head_wh1" >
+
+                <!-- android:background="@drawable/head_pic_right" > -->
+
+                <RelativeLayout
+                    android:id="@+id/top_right_rl"
+                    style="@style/ddz_pic_wh"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    tools:ignore="DuplicateIds" >
+
+                    <ImageView
+                        android:id="@+id/right_pic"
+                        style="@style/head_pic_wh"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/head_bg2" />
+
+                    <ImageView
+                        android:id="@+id/playimageView2"
+                        style="@style/head_pic_wh"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/dizhu" />
+
+                    <!-- android:background="@drawable/nongmin" -->
+
+                    <ImageView
+                        android:id="@+id/zhezhao2"
+                        style="@style/head_pic_wh"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:visibility="gone" />
+                    <!-- android:background="@drawable/touxiangzhezhao" -->
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/main_game_puker_num_wh"
+                    android:layout_alignBottom="@+id/top_right_rl"
+                    android:layout_marginBottom="@dimen/puker_margin_buttom"
+                    android:layout_toLeftOf="@+id/top_right_rl"
+                    android:background="@drawable/pukes"
+                    android:gravity="center"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/play2_surplus_count"
+                    style="@style/main_game_puker_num_wh"
+                    android:layout_alignBottom="@+id/top_right_rl"
+                    android:layout_marginBottom="@dimen/puker_margin_buttom"
+                    android:layout_toLeftOf="@+id/top_right_rl"
+                    android:gravity="center"
+                    android:text="17"
+                    android:textColor="@color/gold"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/top_right_ll"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_right_rl"
+                android:layout_marginTop="@dimen/user_name_margin"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/playTextView2"
+                    android:layout_width="@dimen/head_width"
+                    android:layout_height="@dimen/play_textview_height"
+                    android:background="@drawable/game_text_bg"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="智能玩家3"
+                    android:textColor="#FFF402"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/double2_iv"
+                android:layout_width="20dp"
+                android:layout_height="17dp"
+                android:layout_alignBottom="@+id/top_right_ll"
+                android:layout_alignLeft="@+id/top_right_ll"
+                android:layout_marginRight="-20dp"
+                android:src="@drawable/jiabei_x_2"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dun_layout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/iq2_tv"
+                style="@style/iq_tv_wh"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="11dp"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/dunpairl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:background="@null" >
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/dunpairl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="DuplicateIds" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/play2Order"
+            style="@style/main_game_clock_wh"
+            android:layout_marginRight="@dimen/time_margin"
+            android:layout_marginTop="@dimen/time_margin_top"
+            android:layout_toLeftOf="@+id/top_right_head"
+            android:background="@drawable/time"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="#BD0B0B"
+            android:visibility="gone" />
+        <!-- 玩家自己的定时器   start -->
+
+        <TextView
+            android:id="@+id/play2Time"
+            style="@style/main_game_clock_wh"
+            android:layout_marginRight="@dimen/time_margin"
+            android:layout_marginTop="@dimen/time_margin_top"
+            android:layout_toLeftOf="@+id/top_right_head"
+            android:background="@drawable/time"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="#BD0B0B"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <!-- 玩家自己的定时器   end -->
+        <!-- 右上角玩家已出的牌  start -->
+
+        <RelativeLayout
+            android:id="@+id/play2pass_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pass_card_margin_top"
+            android:layout_toLeftOf="@+id/jipaiqi_layout_right" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/play1_pass_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp" >
+        </RelativeLayout>
+        <!-- 结束数输赢金豆动画Tv -->
+
+        <TextView
+            android:id="@+id/play2_winners_or_losers_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/top_right_head"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="85dp"
+            android:text=""
+            android:textSize="22sp" />
+
+        <!-- 记牌器 -->
+
+        <LinearLayout
+            android:id="@+id/jipaiqi_layout_left"
+            android:layout_width="100dp"
+            android:layout_height="113dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <com.lordcard.ui.view.JiPaiQiTurnPlateView
+                android:id="@+id/jipaiqi_left"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <RelativeLayout
+                android:id="@+id/left_slide_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="5dp" >
+
+                <TextView
+                    android:id="@+id/text_slide_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/text_slide"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size10"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/text_slide_left"
+                    android:background="@drawable/arrow_left"
+                    android:contentDescription="@string/image_description" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jipaiqi_layout_right"
+            android:layout_width="100dp"
+            android:layout_height="113dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <com.lordcard.ui.view.JiPaiQiTurnPlateView
+                android:id="@+id/jipaiqi_right"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <RelativeLayout
+                android:id="@+id/right_slide_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:id="@+id/text_slide_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/text_slide"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size10"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@id/text_slide_right"
+                    android:background="@drawable/arrow_right"
+                    android:contentDescription="@string/image_description" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 顶部倍数图片   start -->
+
+        <RelativeLayout
+            android:id="@+id/beishu"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/game_top_menu_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- 顶部底牌  end -->
+
+            <ImageButton
+                android:id="@+id/game_set"
+                android:layout_width="@dimen/beishu_height"
+                android:layout_height="@dimen/beishu_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/game_setting_bg" />
+            <!-- 暂时去掉返回键 -->
+
+            <ImageButton
+                android:id="@+id/game_back"
+                android:layout_width="@dimen/beishu_height"
+                android:layout_height="@dimen/beishu_height"
+                android:visibility="gone" />
+
+            <!-- 倍数 -->
+
+            <LinearLayout
+                android:layout_width="@dimen/beishu_height"
+                android:layout_height="@dimen/beishu_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="倍数 "
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <!-- 顶部倍数数值   start -->
+
+                <TextView
+                    android:id="@+id/beishunumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/gold"
+                    android:textSize="@dimen/bei_di_text_size" />
+                <!-- 顶部倍数数值   end -->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/dizhucard_rl"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:background="@null"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:id="@+id/dizhucard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:gravity="center" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/system_info_rl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/system_time_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="16:30"
+                        android:textColor="@color/chestnut_red"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/system_time_tv"
+                        android:layout_marginTop="3dp" >
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/wifi_bg" />
+
+                        <ImageView
+                            android:id="@+id/system_wifi_iv"
+                            android:layout_width="16dp"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_wifi" />
+
+                        <ImageView
+                            android:id="@+id/system_power_iv"
+                            android:layout_width="23dp"
+                            android:layout_height="10dp"
+                            android:layout_alignBottom="@+id/system_wifi_iv"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/system_wifi_iv" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/beishu_height"
+                android:layout_height="@dimen/beishu_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="90dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="底注"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <!-- 顶部底数数值   start -->
+
+                <TextView
+                    android:id="@+id/dishunumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/gold"
+                    android:textSize="@dimen/bei_di_text_size" />
+                <!-- 顶部底数数值   end -->
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/mess_btn_view"
+                android:layout_width="@dimen/beishu_height"
+                android:layout_height="@dimen/beishu_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/game_hudong_bg"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/game_robot"
+                android:layout_width="@dimen/beishu_height"
+                android:layout_height="@dimen/beishu_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/game_robot_bg_bg" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beishu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="倒计时：50分钟"
+            android:textColor="#6e0101"
+            android:visibility="gone" />
+        <!-- 顶部底牌  start -->
+
+
+        <!-- 顶部倍数图片   end -->
+
+        <ImageView
+            android:id="@+id/vip_no_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/beishu"
+            android:layout_alignTop="@+id/beishu"
+            android:layout_marginRight="86px"
+            android:paddingLeft="8px"
+            android:visibility="visible" />
+        <!-- android:src="@drawable/vip" -->
+
+        <TextView
+            android:id="@+id/vip_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vip_no_img"
+            android:layout_alignTop="@+id/vip_no_img"
+            android:layout_marginLeft="45px"
+            android:paddingTop="3px"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/jifen_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="670px"
+            android:layout_marginTop="313px"
+            android:text="10000"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhidou_TextView"
+            android:layout_width="110px"
+            android:layout_height="23px"
+            android:layout_marginLeft="650px"
+            android:layout_marginTop="335px"
+            android:gravity="center_vertical"
+            android:text="9999"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <!-- 金豆图片   start -->
+
+        <ImageView
+            android:layout_width="51px"
+            android:layout_height="23px"
+            android:layout_marginLeft="600px"
+            android:layout_marginTop="335px"
+            android:src="@drawable/zhidou"
+            android:visibility="gone" />
+        <!-- 金豆图片   end -->
+
+
+        <!-- 出牌区    不出  出牌  提示 start -->
+
+        <LinearLayout
+            android:id="@+id/play_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/chu_marginTop"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/pass_button"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom"
+                android:background="@drawable/buchu_btn_bg" />
+
+            <Button
+                android:id="@+id/tishi_button"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/jiaofen_btn_margin_left"
+                android:background="@drawable/tishi_btn_bg" />
+
+            <Button
+                android:id="@+id/chupai_button"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/jiaofen_btn_margin_left"
+                android:background="@drawable/chupai_btn_bg" />
+        </LinearLayout>
+        <!-- 出牌区    不出  出牌  提示  end -->
+
+        <com.lordcard.ui.view.TouchRelativeLayout
+            android:id="@+id/play_cards"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/touch_marginTop"
+            android:background="@null"
+            android:descendantFocusability="blocksDescendants"
+            android:visibility="visible" >
+        </com.lordcard.ui.view.TouchRelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_jipaiqi"
+            android:layout_width="300dp"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/jipaiqi_remnant_head"
+                android:contentDescription="@string/image_description" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/jipaiqi_remnant_head_body"
+                android:baselineAligned="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="0dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/king_big"
+                            android:contentDescription="@string/image_description" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/king_small"
+                            android:contentDescription="@string/image_description" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="2" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="A" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="K" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="Q" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="J" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:singleLine="true"
+                        android:text="10" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="9" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="8" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="7" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="6" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="5" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="4" />
+
+                    <TextView
+                        style="@style/text_style_num"
+                        android:text="3" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#301d1d" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/pork_kingb"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_kings"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_2"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_A"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_K"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_Q"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_J"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_10"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_9"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_8"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_7"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_6"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_5"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_4"
+                        style="@style/text_style_title" />
+
+                    <TextView
+                        android:id="@+id/pork_3"
+                        style="@style/text_style_title" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/dzed_beans_insufficient_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/tuoguan_bg"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/dzed_beans_insufficient_tv"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=" 本局可赢30000000您的金豆不足只能赢100000"
+                android:textColor="@color/gold"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dzed_recharge_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/dzed_recharge_beans_btn"
+                style="@style/dialog_ok_btn_style"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/select1_btn_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="充值10元"
+                android:textColor="@color/dialog_ok_btn_text_color"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/dzed_borrow_beans_btn"
+                style="@style/dialog_ok_btn_style"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select1_btn_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="借点豆"
+                android:textColor="@color/dialog_ok_btn_text_color"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/network_slow_tip"
+            android:layout_width="180dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/toast_style"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:text="您当前网络缓慢  ..."
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="gone" />
+        <!-- 叫地主按钮  1分   2分  3分 倒计时钟 不叫  start -->
+
+        <LinearLayout
+            android:id="@+id/jiaofenRelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/chu_marginTop"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/fen1Button"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom"
+                android:background="@drawable/fen1_btn_bg" />
+
+            <Button
+                android:id="@+id/fen2Button"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/jiaofen_btn_margin_left"
+                android:background="@drawable/fen2_btn_bg" />
+
+            <Button
+                android:id="@+id/fen3Button"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/jiaofen_btn_margin_left"
+                android:background="@drawable/fen3_btn_bg" />
+
+            <Button
+                android:id="@+id/bujiaoButton"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/jiaofen_btn_margin_left"
+                android:background="@drawable/bujiao_btn_bg" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_jipaiqi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/jiaofenRelative"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="185dp"
+            android:background="@drawable/btn_jipaiqi_bg"
+            android:visibility="invisible" />
+        <!-- 叫地主按钮    1分   2分  3分 倒计时钟 不叫 end -->
+
+
+        <!-- 加倍start -->
+
+        <LinearLayout
+            android:id="@+id/tila_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/chu_marginTop"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/tila_button_2"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom" />
+
+            <Button
+                android:id="@+id/tila_button_4"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25dp" />
+
+            <Button
+                android:id="@+id/bu_tila_button"
+                style="@style/game_tishi_btn_style"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+        <!-- 加倍end -->
+
+        <RelativeLayout
+            android:id="@+id/busy_play2Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="615px"
+            android:layout_marginTop="53px"
+            android:paddingLeft="35px"
+            android:paddingTop="18px"
+            android:text="15"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+
+        <!-- 打牌中动画效果  炸弹  飞机   start -->
+
+        <RelativeLayout
+            android:id="@+id/play_anim_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/play_anim_layout_zhadan"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/play_anim_layout_wangzha"
+            android:layout_width="100dp"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:visibility="gone" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/play_anim_layout_feiji"
+            android:layout_width="198dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-120dp"
+            android:gravity="center"
+            android:visibility="gone" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/play_anim_layout_shunzi"
+            android:layout_width="331dp"
+            android:layout_height="280dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone" >
+        </ImageView>
+        <!-- 打牌中动画效果  炸弹  飞机   end -->
+
+
+        <!-- 玩家信息展示框   start -->
+
+        <RelativeLayout
+            android:id="@+id/playinfoview"
+            android:layout_width="300px"
+            android:layout_height="150px"
+            android:paddingLeft="40px"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/userinfotext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45px" />
+        </RelativeLayout>
+        <!-- 玩家信息展示框   end -->
+
+        <RelativeLayout
+            android:id="@+id/bao_xiang_layout"
+            android:layout_width="45dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="100dp" >
+
+            <RelativeLayout
+                android:id="@+id/baoxiang"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/bao_xiang_star"
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/baoxiang_start_3"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/bao_xiang_text"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/baoxiang"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/baoxiang_text_bg"
+                android:gravity="center"
+                android:text="1/5"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/gp_top_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="120dp"
+            android:layout_marginRight="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/tuo_guan_layout"
+            android:layout_width="643dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tuoguan_bg"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="113dp"
+                    android:layout_height="29dp"
+                    android:background="@drawable/tuoguan_text" />
+
+                <Button
+                    android:id="@+id/tuo_guan_btn"
+                    android:layout_width="91dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/selector_blue_corner"
+                    android:text="取消"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dzm_public_mess_layout"
+            android:layout_width="230dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/beishu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/toast_style"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/public_imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/laba" />
+
+            <com.lordcard.entity.MarqueeText
+                android:id="@+id/public_textview"
+                android:layout_width="210dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#FFF402"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 玩家自己聊天框   start -->
+
+    <LinearLayout
+        android:id="@+id/my_frame"
+        android:layout_width="@dimen/letf_textview_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my_frame_marginbuttom"
+        android:layout_marginLeft="@dimen/my_frame_marginLeft"
+        android:layout_marginTop="@dimen/my_frame_marginTop"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:textColor="#E83030"
+        android:visibility="gone" />
+    <!-- 玩家自己聊天框   end -->
+    <!-- 左上角玩家聊天框   start -->
+
+    <LinearLayout
+        android:id="@+id/left_frame"
+        android:layout_width="@dimen/letf_textview_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:textColor="#E83030"
+        android:visibility="gone" />
+    <!-- 左上角玩家聊天框   end -->
+
+
+    <!-- 左上角玩家聊天框  美女 start -->
+
+    <LinearLayout
+        android:id="@+id/girl_left_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:textColor="#E83030"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/gir_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dou_left_girl_say_tv_pangding_left"
+            android:layout_marginTop="@dimen/dou_left_girl_say_tv_pangding_top"
+            android:background="@drawable/zuo_mess_view"
+            android:text="这牌打得\n真衰啊…"
+            android:textColor="#B22222"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- 左上角玩家聊天框   end -->
+    <!-- 右上角玩家聊天框   start -->
+
+    <LinearLayout
+        android:id="@+id/right_frame"
+        android:layout_width="@dimen/letf_textview_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/right_frame_marginLeft"
+        android:layout_marginRight="@dimen/right_frame_marginright"
+        android:layout_marginTop="@dimen/right_frame_marginTop"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:textColor="#E83030"
+        android:visibility="gone" />
+    <!-- 右上角玩家聊天框   end -->
+    <!-- 右上角玩家聊天框  美女 start -->
+
+    <LinearLayout
+        android:id="@+id/girl_right_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:textColor="#E83030"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/gir_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/dou_right_girl_say_tv_pangding_right"
+                android:layout_marginTop="@dimen/dou_right_girl_say_tv_pangding_top"
+                android:background="@drawable/you_mess_view"
+                android:text="知道厉害了吧！"
+                android:textColor="#B22222"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- 右上角玩家聊天框   end -->
+    <!-- 超快赛  start -->
+    <!-- 炸弹 -->
+
+    <ImageView
+        android:id="@+id/zhadan_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/zhadan"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pop_iv"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="72dp" />
+
+    <LinearLayout
+        android:id="@+id/login_sliding_handle_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/game_gilr_items"
+            android:layout_width="43dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="-7dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/netslow_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/nettip_slow"
+        android:gravity="center"
+        android:text="您的网络有点不给力，正在拼命重连中，马上就好......"
+        android:textColor="#e4ff30"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

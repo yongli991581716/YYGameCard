@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/prize_height"
+    android:background="#FEF5B2" >
+
+    <ImageView
+        android:id="@+id/prizes_center"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/prize_height" />
+
+</RelativeLayout>
