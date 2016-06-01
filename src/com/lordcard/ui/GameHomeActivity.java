@@ -383,11 +383,11 @@ public class GameHomeActivity extends BaseActivity implements OnTouchListener,
         String isFirst = GameCache.getStr(Constant.IS_FIRST);
         if (TextUtils.isEmpty(isFirst)) {
             GameCache.putStr(Constant.IS_FIRST, Constant.IS_FIRST);
-            localBean = "2000";
+            localBean = "3000";
             GameCache.putStr(Constant.GAME_BEAN_CACHE, localBean);
 
             final GameDialog dialog = DialogUtils.mesTipDialog(
-                    "首次登录系统，奖励2000金豆，加油哦!", false, true);
+                    "首次登录系统，奖励3000金豆，加油哦!", false, true);
             dialog.getOk().setOnClickListener(new OnClickListener() {
 
                 @Override
@@ -550,7 +550,7 @@ public class GameHomeActivity extends BaseActivity implements OnTouchListener,
                         break;
                     case R.id.game_quick_match:// 单机
                         Intent intent = new Intent();
-                        intent.setClass(GameHomeActivity.this, PersonnalDoudizhuActivity.class);
+                        intent.setClass(GameHomeActivity.this, SelectBaseScoreActivity.class);
                         startActivity(intent);
                         break;
                     default:

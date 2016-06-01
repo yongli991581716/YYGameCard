@@ -910,15 +910,13 @@
                         <ImageView
                             android:layout_width="16dp"
                             android:layout_height="12dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/wifi_bg" />
+                            android:layout_marginLeft="5dp" />
 
                         <ImageView
                             android:id="@+id/system_wifi_iv"
                             android:layout_width="16dp"
                             android:layout_height="12dp"
-                            android:layout_marginLeft="5dp"
-                            android:src="@drawable/ic_wifi" />
+                            android:layout_marginLeft="5dp" />
 
                         <ImageView
                             android:id="@+id/system_power_iv"

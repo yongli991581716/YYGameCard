@@ -89,7 +89,6 @@ public class GameEndDialog extends Dialog implements  android.view.View.OnClickL
     private ListView mBeiShuList;// 左边倍数列表
     private List<BeiShu> beiShu;// 倍数数据
     private RelativeLayout bottomLl;// 底部跳转按钮容器控件
-    private GameIqUpgradeDialog mIqMinUpgradeDialog = null;
     private AutoTask goOutTask = null;// 退出游戏到大厅定时器
     private AutoTask showMinUpgradeTask = null;// 显示升小级对话框定时器
     private AutoTask showMaxUpgradeTask = null;// 显示升大级对话框定时器
@@ -130,21 +129,7 @@ public class GameEndDialog extends Dialog implements  android.view.View.OnClickL
                         handler.sendEmptyMessage(26);
                         break;
                     case SHOW_IQ_GRADE_MIN:// 显示IQ升级对话框(小级)
-                        String result = msg.getData().getString("getCelebratedText");
-                        boolean isDiZhu = msg.getData().getBoolean("isCall", false);
-                        String gender = Database.userMap.get(order).getGender();// 性别 0保密1女2男
-                        Map<String, String> headPath = Database.userMap.get(order).getIqImg();
-                        if (null == mIqMinUpgradeDialog || !mIqMinUpgradeDialog.isShowing()) {
-                            mIqMinUpgradeDialog = new GameIqUpgradeDialog(context, mHandler,
-                                    result, gender, isDiZhu, headPath, GED_SHOW_IQ_GRADE_MAX);
-                            android.view.WindowManager.LayoutParams lay = mIqMinUpgradeDialog
-                                    .getWindow().getAttributes();
-                            setParams(lay);
-                            Window window = mIqMinUpgradeDialog.getWindow();
-                            window.setGravity(Gravity.CENTER); // 此处可以设置dialog显示的位置
-                            window.setWindowAnimations(R.style.mystyle2); // 添加动画
-                            mIqMinUpgradeDialog.show();
-                        }
+                        
                         break;
                     case ENABLE_DIALOG:
                         enableButtons(true);
@@ -687,10 +672,7 @@ public class GameEndDialog extends Dialog implements  android.view.View.OnClickL
     @Override
     public void dismiss() {
         super.dismiss();
-        if (null != mIqMinUpgradeDialog && mIqMinUpgradeDialog.isShowing()) {
-            mIqMinUpgradeDialog.dismiss();
-            mIqMinUpgradeDialog = null;
-        }
+       
         stopGoOutTask();
         stopshowUpgradeTask();
         stopGoOutTask2();

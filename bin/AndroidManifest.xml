@@ -92,6 +92,15 @@
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="adjustPan" >
         </activity>
+         <activity
+            android:name="com.lordcard.ui.SelectBaseScoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
         <activity
             android:name="com.lordcard.ui.personal.PersonnalDoudizhuActivity"
             android:configChanges="orientation|keyboardHidden"

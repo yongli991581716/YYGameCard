@@ -305,6 +305,8 @@ public class PersonnalDoudizhuActivity extends BaseActivity implements IGameView
     private TextView text_4;
     private TextView text_3;
     private AdView mAdView;
+    private int mBaseScore;
+    public static final String TRANS_NAME = "BASE_SCORE";
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -314,8 +316,10 @@ public class PersonnalDoudizhuActivity extends BaseActivity implements IGameView
         if (bundle != null) {
             type = bundle.getInt("type");
         }
+
+        mBaseScore = this.getIntent().getIntExtra(TRANS_NAME, 200);
         Room room = new Room();
-        room.setBasePoint(200);
+        room.setBasePoint(mBaseScore);
         room.setRatio(1);
         Database.JOIN_ROOM = room;
         // 检测金豆
@@ -1786,7 +1790,7 @@ public class PersonnalDoudizhuActivity extends BaseActivity implements IGameView
             initViewFlipper(GameCache.getStr(Constant.GAME_BACKGROUND));
         }
         beishuNumView.setText("1"); // 房间默认倍数
-        dishu.setText("200"); // 房间默认底数
+        dishu.setText(String.valueOf(mBaseScore)); // 房间默认底数
         gpRl = (LinearLayout) findViewById(R.id.doudizhu_gp_rl);
         gpCount = (TextView) findViewById(R.id.doudizhu_kuai_img);
         gpType = (TextView) findViewById(R.id.doudizhu_game_type_tv);
@@ -2118,7 +2122,7 @@ public class PersonnalDoudizhuActivity extends BaseActivity implements IGameView
                         break;
                     case 21:// 设置房间的倍数和底数
                         beishuNumView.setText("1"); // 房间默认倍数
-                        dishu.setText("200"); // 房间默认底数
+                        dishu.setText(String.valueOf(mBaseScore)); // 房间默认底数
                         break;
                     case 23:// 加入心跳界面（普通赛制）
                         showWaitView();
@@ -3070,7 +3074,7 @@ public class PersonnalDoudizhuActivity extends BaseActivity implements IGameView
                     public void run() {
                         dismissDialog();
                         AloneGameEndDialog mGameEndDialog = new AloneGameEndDialog(ctx, users,
-                                mySelfOrder, handler);
+                                mySelfOrder, handler, mBaseScore);
                         mGameEndDialog.setContentView(R.layout.doudizhu_end);
                         android.view.WindowManager.LayoutParams lay = mGameEndDialog.getWindow()
                                 .getAttributes();
@@ -3108,10 +3112,10 @@ public class PersonnalDoudizhuActivity extends BaseActivity implements IGameView
                     int step = 0;// 步长
                     int count = 0;// 循环次数
                     int yushu = 0;// 余数
-                    if (num >= 200) {
-                        step = num / 200;
-                        count = 200;
-                        yushu = num % 200;
+                    if (num >= mBaseScore) {
+                        step = num / mBaseScore;
+                        count = mBaseScore;
+                        yushu = num % mBaseScore;
                     } else {
                         step = 1;
                         count = num;
@@ -5690,25 +5694,25 @@ public class PersonnalDoudizhuActivity extends BaseActivity implements IGameView
             playMine.setSpringRatio(springRatio);
             if (isDizhuWin) {
                 if (masterOrder != mySelfOrder) {
-                    if (allMybeans <= Integer.parseInt(beishuNumber) * 200 * springRatio) {
+                    if (allMybeans <= Integer.parseInt(beishuNumber) * mBaseScore * springRatio) {
                         myPayBeans = -allMybeans;
                     } else {
-                        myPayBeans = -Integer.parseInt(beishuNumber) * 200 * springRatio;
+                        myPayBeans = -Integer.parseInt(beishuNumber) * mBaseScore * springRatio;
                     }
                     playMine.setPayment(myPayBeans);
                 } else {
-                    myPayBeans = Integer.parseInt(beishuNumber) * 200 * 2 * springRatio;
+                    myPayBeans = Integer.parseInt(beishuNumber) * mBaseScore * 2 * springRatio;
                     playMine.setPayment(myPayBeans);
                 }
             } else {
                 if (masterOrder != mySelfOrder) {
-                    myPayBeans = Integer.parseInt(beishuNumber) * 200 * springRatio;
+                    myPayBeans = Integer.parseInt(beishuNumber) * mBaseScore * springRatio;
                     playMine.setPayment(myPayBeans);
                 } else {
-                    if (allMybeans <= Integer.parseInt(beishuNumber) * 200 * 2) {
+                    if (allMybeans <= Integer.parseInt(beishuNumber) * mBaseScore * 2) {
                         myPayBeans = -allMybeans;
                     } else {
-                        myPayBeans = -Integer.parseInt(beishuNumber) * 200 * 2 * springRatio;
+                        myPayBeans = -Integer.parseInt(beishuNumber) * mBaseScore * 2 * springRatio;
                     }
                     playMine.setPayment(myPayBeans);
                 }
@@ -5736,20 +5740,22 @@ public class PersonnalDoudizhuActivity extends BaseActivity implements IGameView
             playNext.setOrder(2);
             if (isDizhuWin) {
                 if (masterOrder != 2) {
-                    playNext.setPayment(-Integer.parseInt(beishuNumber) * 200 * springRatio);
+                    playNext.setPayment(-Integer.parseInt(beishuNumber) * mBaseScore * springRatio);
                 } else {
-                    playNext.setPayment(Integer.parseInt(beishuNumber) * 200 * springRatio
+                    playNext.setPayment(Integer.parseInt(beishuNumber) * mBaseScore * springRatio
                             - myPayBeans);
                 }
             } else {
                 if (masterOrder != 2) {
                     if (masterOrder != mySelfOrder) {
-                        playNext.setPayment(Integer.parseInt(beishuNumber) * 200 * springRatio);
+                        playNext.setPayment(Integer.parseInt(beishuNumber) * mBaseScore
+                                * springRatio);
                     } else {
                         playNext.setPayment(-myPayBeans / 2);
                     }
                 } else {
-                    playNext.setPayment(-Integer.parseInt(beishuNumber) * 200 * 2 * springRatio);
+                    playNext.setPayment(-Integer.parseInt(beishuNumber) * mBaseScore * 2
+                            * springRatio);
                 }
             }
             playNext.setBaseRatio(1);
@@ -5769,20 +5775,22 @@ public class PersonnalDoudizhuActivity extends BaseActivity implements IGameView
             playPre.setOrder(3);
             if (isDizhuWin) {
                 if (masterOrder != 3) {
-                    playPre.setPayment(-Integer.parseInt(beishuNumber) * 200 * springRatio);
+                    playPre.setPayment(-Integer.parseInt(beishuNumber) * mBaseScore * springRatio);
                 } else {
-                    playPre.setPayment(Integer.parseInt(beishuNumber) * 200 * springRatio
+                    playPre.setPayment(Integer.parseInt(beishuNumber) * mBaseScore * springRatio
                             - myPayBeans);
                 }
             } else {
                 if (masterOrder != 3) {
                     if (masterOrder != mySelfOrder) {
-                        playPre.setPayment(Integer.parseInt(beishuNumber) * 200 * springRatio);
+                        playPre.setPayment(Integer.parseInt(beishuNumber) * mBaseScore
+                                * springRatio);
                     } else {
                         playPre.setPayment(-myPayBeans / 2);
                     }
                 } else {
-                    playPre.setPayment(-Integer.parseInt(beishuNumber) * 200 * 2 * springRatio);
+                    playPre.setPayment(-Integer.parseInt(beishuNumber) * mBaseScore * 2
+                            * springRatio);
                 }
             }
             playPre.setBaseRatio(1);

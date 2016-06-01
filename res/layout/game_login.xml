@@ -161,7 +161,6 @@
             android:id="@+id/test"
             android:layout_width="205dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/announceet_xiao"
             android:orientation="vertical" >
 
             <TextView

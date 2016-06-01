@@ -1049,7 +1049,7 @@ public class ActivityUtils {
     public static void setHead(ImageView IconImg, String gender, boolean isDizhu) {
         if (isDizhu) {// 是否是地主
             if (gender.equals("1")) {// 性别 0保密/1女/2男
-                IconImg.setImageDrawable(ImageUtil.getResDrawable(R.drawable.dizhu_gril, true));
+                IconImg.setImageDrawable(ImageUtil.getResDrawable(R.drawable.dizhu, true));
             } else {
                 IconImg.setImageDrawable(ImageUtil.getResDrawable(R.drawable.dizhu, true));
             }
@@ -1110,11 +1110,11 @@ public class ActivityUtils {
             final boolean isDizhu, final Map<String, String> iqImg, final String path) {
         if (isDizhu) {// 是否是地主
             if (!TextUtils.isEmpty(gender) && gender.trim().equals("1")) {// 性别 0保密/1女/2男
-                IconImg.setImageDrawable(ImageUtil.getResDrawable(R.drawable.dizhu_gril, true));
+                IconImg.setImageDrawable(ImageUtil.getResDrawable(R.drawable.dizhu, true));
                 if (null != iqImg && iqImg.containsKey("0") && !TextUtils.isEmpty(iqImg.get("0"))) {
                     IconImg.setImageBitmap(null == ImageUtil.getGirlBitmap(path + iqImg.get("0"),
                             true, false) ? BitmapFactory.decodeResource(ctx.getResources(),
-                            R.drawable.dizhu_gril) : ImageUtil.getGirlBitmap(path + iqImg.get("0"),
+                            R.drawable.dizhu) : ImageUtil.getGirlBitmap(path + iqImg.get("0"),
                             true, false));
                 }
             } else {
